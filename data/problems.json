@@ -1,0 +1,542 @@
+[
+  {
+    "id": "basic-001",
+    "number": 1,
+    "title": "Swap Two Numbers (Temp Variable)",
+    "slug": "swap-two-numbers-temp",
+    "description": "## Swap Two Numbers Using a Temporary Variable\n\nGiven two numbers `a` and `b`, return an array `[b, a]` where the values are swapped.\n\nYou must use a temporary variable to perform the swap.\n\n### Examples\n\n**Example 1:**\n```\nInput: a = 5, b = 10\nOutput: [10, 5]\n```\n\n**Example 2:**\n```\nInput: a = -3, b = 7\nOutput: [7, -3]\n```\n\n### Constraints\n- `-10^6 <= a, b <= 10^6`\n- Both inputs are integers",
+    "topic": "Basic",
+    "difficulty": "Easy",
+    "starterCode": "function swapWithTemp(a, b) {\n  // Use a temporary variable to swap a and b\n  // Return the swapped values as [b, a]\n  \n}",
+    "functionName": "swapWithTemp",
+    "testCases": [
+      { "input": [5, 10], "expected": [10, 5] },
+      { "input": [-3, 7], "expected": [7, -3] },
+      { "input": [0, 0], "expected": [0, 0] },
+      { "input": [100, -100], "expected": [-100, 100] }
+    ],
+    "hiddenTestCases": [
+      { "input": [999999, -999999], "expected": [-999999, 999999] },
+      { "input": [1, 1], "expected": [1, 1] },
+      { "input": [42, 0], "expected": [0, 42] }
+    ]
+  },
+  {
+    "id": "basic-002",
+    "number": 2,
+    "title": "Swap Two Numbers (Arithmetic)",
+    "slug": "swap-two-numbers-arithmetic",
+    "description": "## Swap Two Numbers Using Arithmetic Operations\n\nGiven two numbers `a` and `b`, return an array `[b, a]` where the values are swapped.\n\nYou must use arithmetic operations (addition and subtraction) to perform the swap **without using a temporary variable**.\n\n### Examples\n\n**Example 1:**\n```\nInput: a = 3, b = 8\nOutput: [8, 3]\n```\n\n**Example 2:**\n```\nInput: a = 15, b = 20\nOutput: [20, 15]\n```\n\n### Constraints\n- `-10^6 <= a, b <= 10^6`\n- Both inputs are integers",
+    "topic": "Basic",
+    "difficulty": "Easy",
+    "starterCode": "function swapArithmetic(a, b) {\n  // Swap a and b using only + and - operators\n  // Do NOT use a temporary variable\n  // Return the swapped values as [b, a]\n  \n}",
+    "functionName": "swapArithmetic",
+    "testCases": [
+      { "input": [3, 8], "expected": [8, 3] },
+      { "input": [15, 20], "expected": [20, 15] },
+      { "input": [0, 5], "expected": [5, 0] },
+      { "input": [-10, 10], "expected": [10, -10] }
+    ],
+    "hiddenTestCases": [
+      { "input": [500000, -500000], "expected": [-500000, 500000] },
+      { "input": [7, 7], "expected": [7, 7] },
+      { "input": [-1, -1], "expected": [-1, -1] }
+    ]
+  },
+  {
+    "id": "basic-003",
+    "number": 3,
+    "title": "Swap Two Numbers (XOR)",
+    "slug": "swap-two-numbers-xor",
+    "description": "## Swap Two Numbers Using XOR (Bitwise)\n\nGiven two integers `a` and `b`, return an array `[b, a]` where the values are swapped.\n\nYou must use the XOR bitwise operator (`^`) to perform the swap **without using a temporary variable or arithmetic**.\n\n### Examples\n\n**Example 1:**\n```\nInput: a = 4, b = 9\nOutput: [9, 4]\n```\n\n**Example 2:**\n```\nInput: a = 12, b = 25\nOutput: [25, 12]\n```\n\n### Constraints\n- `-10^6 <= a, b <= 10^6`\n- Both inputs are integers",
+    "topic": "Basic",
+    "difficulty": "Easy",
+    "starterCode": "function swapXOR(a, b) {\n  // Swap a and b using only the XOR (^) operator\n  // Do NOT use a temporary variable or arithmetic\n  // Return the swapped values as [b, a]\n  \n}",
+    "functionName": "swapXOR",
+    "testCases": [
+      { "input": [4, 9], "expected": [9, 4] },
+      { "input": [12, 25], "expected": [25, 12] },
+      { "input": [0, 7], "expected": [7, 0] },
+      { "input": [1, 1], "expected": [1, 1] }
+    ],
+    "hiddenTestCases": [
+      { "input": [255, 128], "expected": [128, 255] },
+      { "input": [0, 0], "expected": [0, 0] },
+      { "input": [1000, 2000], "expected": [2000, 1000] }
+    ]
+  },
+  {
+    "id": "basic-004",
+    "number": 4,
+    "title": "Discount Calculator",
+    "slug": "discount-calculator",
+    "description": "## Discount Calculator\n\nGiven the original `price` and a `discountPercent`, calculate and return the final price after applying the discount.\n\nReturn the result rounded to 2 decimal places.\n\n### Formula\n```\nfinalPrice = price - (price * discountPercent / 100)\n```\n\n### Examples\n\n**Example 1:**\n```\nInput: price = 1000, discountPercent = 20\nOutput: 800\n```\n\n**Example 2:**\n```\nInput: price = 49.99, discountPercent = 15\nOutput: 42.49\n```\n\n### Constraints\n- `0 <= price <= 10^6`\n- `0 <= discountPercent <= 100`",
+    "topic": "Basic",
+    "difficulty": "Easy",
+    "starterCode": "function calculateDiscount(price, discountPercent) {\n  // Calculate the final price after discount\n  // Round to 2 decimal places\n  // Return the final price\n  \n}",
+    "functionName": "calculateDiscount",
+    "testCases": [
+      { "input": [1000, 20], "expected": 800 },
+      { "input": [49.99, 15], "expected": 42.49 },
+      { "input": [500, 0], "expected": 500 },
+      { "input": [200, 100], "expected": 0 }
+    ],
+    "hiddenTestCases": [
+      { "input": [99.99, 50], "expected": 50 },
+      { "input": [1, 10], "expected": 0.9 },
+      { "input": [0, 50], "expected": 0 }
+    ]
+  },
+  {
+    "id": "basic-005",
+    "number": 5,
+    "title": "Electricity Bill Calculator",
+    "slug": "electricity-bill-calculator",
+    "description": "## Electricity Bill Calculator\n\nGiven the number of `units` consumed, calculate the electricity bill based on these slab rates:\n\n| Units Range | Rate per Unit |\n|---|---|\n| First 100 units | ₹1.50 |\n| Next 100 (101–200) | ₹2.50 |\n| Next 100 (201–300) | ₹4.00 |\n| Above 300 | ₹6.00 |\n\nReturn the total bill amount rounded to 2 decimal places.\n\n### Examples\n\n**Example 1:**\n```\nInput: units = 50\nOutput: 75\nExplanation: 50 × 1.50 = 75\n```\n\n**Example 2:**\n```\nInput: units = 250\nOutput: 550\nExplanation: (100 × 1.50) + (100 × 2.50) + (50 × 4.00) = 150 + 250 + 200 = 600\n```\n\nWait, let me recalculate: 150 + 250 + 200 = 600. Output: 600.\n\n**Example 3:**\n```\nInput: units = 350\nOutput: 1100\nExplanation: (100 × 1.50) + (100 × 2.50) + (100 × 4.00) + (50 × 6.00) = 150 + 250 + 400 + 300 = 1100\n```\n\n### Constraints\n- `0 <= units <= 10^6`\n- `units` is a non-negative integer",
+    "topic": "Basic",
+    "difficulty": "Easy",
+    "starterCode": "function electricityBill(units) {\n  // Calculate the electricity bill based on slab rates\n  // First 100: ₹1.50, Next 100: ₹2.50, Next 100: ₹4.00, Above 300: ₹6.00\n  // Return the total bill rounded to 2 decimal places\n  \n}",
+    "functionName": "electricityBill",
+    "testCases": [
+      { "input": [50], "expected": 75 },
+      { "input": [250], "expected": 600 },
+      { "input": [350], "expected": 1100 },
+      { "input": [0], "expected": 0 }
+    ],
+    "hiddenTestCases": [
+      { "input": [100], "expected": 150 },
+      { "input": [200], "expected": 400 },
+      { "input": [300], "expected": 800 },
+      { "input": [500], "expected": 2300 }
+    ]
+  },
+  {
+    "id": "basic-006",
+    "number": 6,
+    "title": "Currency Note Counter",
+    "slug": "currency-note-counter",
+    "description": "## Currency Note Counter\n\nGiven an `amount` in rupees, find the minimum number of currency notes needed to represent that amount.\n\nAvailable denominations: `[2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]`\n\nReturn an object where keys are the denominations used and values are the count of notes.\nOnly include denominations with count > 0.\n\n### Examples\n\n**Example 1:**\n```\nInput: amount = 2763\nOutput: {\"2000\": 1, \"500\": 1, \"200\": 1, \"50\": 1, \"10\": 1, \"2\": 1, \"1\": 1}\n```\n\n**Example 2:**\n```\nInput: amount = 1000\nOutput: {\"500\": 2}\n```\n\n### Constraints\n- `0 <= amount <= 10^7`\n- `amount` is a non-negative integer",
+    "topic": "Basic",
+    "difficulty": "Easy",
+    "starterCode": "function noteCounter(amount) {\n  // Available denominations: [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]\n  // Return an object with denomination as key and count as value\n  // Only include denominations with count > 0\n  \n}",
+    "functionName": "noteCounter",
+    "testCases": [
+      { "input": [2763], "expected": {"2000": 1, "500": 1, "200": 1, "50": 1, "10": 1, "2": 1, "1": 1} },
+      { "input": [1000], "expected": {"500": 2} },
+      { "input": [0], "expected": {} },
+      { "input": [1], "expected": {"1": 1} }
+    ],
+    "hiddenTestCases": [
+      { "input": [5555], "expected": {"2000": 2, "500": 3, "50": 1, "5": 1} },
+      { "input": [2000], "expected": {"2000": 1} },
+      { "input": [9], "expected": {"5": 1, "2": 2} }
+    ]
+  },
+  {
+    "id": "loops-001",
+    "number": 7,
+    "title": "Sum of First N Natural Numbers",
+    "slug": "sum-of-n",
+    "description": "## Sum of First N Natural Numbers\n\nGiven a positive integer `n`, return the sum of the first `n` natural numbers (1 + 2 + 3 + ... + n).\n\nYou must use a loop (do not use the formula n*(n+1)/2).\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 5\nOutput: 15\nExplanation: 1 + 2 + 3 + 4 + 5 = 15\n```\n\n**Example 2:**\n```\nInput: n = 10\nOutput: 55\n```\n\n### Constraints\n- `1 <= n <= 10^6`",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function sumOfN(n) {\n  // Use a loop to calculate sum of 1 to n\n  // Return the sum\n  \n}",
+    "functionName": "sumOfN",
+    "testCases": [
+      { "input": [5], "expected": 15 },
+      { "input": [10], "expected": 55 },
+      { "input": [1], "expected": 1 },
+      { "input": [100], "expected": 5050 }
+    ],
+    "hiddenTestCases": [
+      { "input": [1000], "expected": 500500 },
+      { "input": [50], "expected": 1275 },
+      { "input": [2], "expected": 3 }
+    ]
+  },
+  {
+    "id": "loops-002",
+    "number": 8,
+    "title": "Factorial",
+    "slug": "factorial",
+    "description": "## Factorial\n\nGiven a non-negative integer `n`, return its factorial (`n!`).\n\n`n! = 1 × 2 × 3 × ... × n` and `0! = 1`.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 5\nOutput: 120\nExplanation: 5! = 1 × 2 × 3 × 4 × 5 = 120\n```\n\n**Example 2:**\n```\nInput: n = 0\nOutput: 1\n```\n\n### Constraints\n- `0 <= n <= 20`\n- The result fits in a JavaScript number",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function factorial(n) {\n  // Calculate n! using a loop\n  // Remember: 0! = 1\n  // Return the factorial\n  \n}",
+    "functionName": "factorial",
+    "testCases": [
+      { "input": [5], "expected": 120 },
+      { "input": [0], "expected": 1 },
+      { "input": [1], "expected": 1 },
+      { "input": [10], "expected": 3628800 }
+    ],
+    "hiddenTestCases": [
+      { "input": [3], "expected": 6 },
+      { "input": [7], "expected": 5040 },
+      { "input": [12], "expected": 479001600 }
+    ]
+  },
+  {
+    "id": "loops-003",
+    "number": 9,
+    "title": "Find All Divisors",
+    "slug": "find-divisors",
+    "description": "## Find All Divisors\n\nGiven a positive integer `n`, return an array of all divisors of `n` in ascending order.\n\nA divisor of `n` is a number that divides `n` with no remainder.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 12\nOutput: [1, 2, 3, 4, 6, 12]\n```\n\n**Example 2:**\n```\nInput: n = 7\nOutput: [1, 7]\n```\n\n### Constraints\n- `1 <= n <= 10^6`",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function findDivisors(n) {\n  // Find all numbers that divide n evenly\n  // Return them in ascending order as an array\n  \n}",
+    "functionName": "findDivisors",
+    "testCases": [
+      { "input": [12], "expected": [1, 2, 3, 4, 6, 12] },
+      { "input": [7], "expected": [1, 7] },
+      { "input": [1], "expected": [1] },
+      { "input": [28], "expected": [1, 2, 4, 7, 14, 28] }
+    ],
+    "hiddenTestCases": [
+      { "input": [100], "expected": [1, 2, 4, 5, 10, 20, 25, 50, 100] },
+      { "input": [2], "expected": [1, 2] },
+      { "input": [36], "expected": [1, 2, 3, 4, 6, 9, 12, 18, 36] }
+    ]
+  },
+  {
+    "id": "loops-004",
+    "number": 10,
+    "title": "Prime Number Check",
+    "slug": "prime-check",
+    "description": "## Prime Number Check\n\nGiven a positive integer `n`, return `true` if it is a prime number, `false` otherwise.\n\nA prime number is greater than 1 and has no divisors other than 1 and itself.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 7\nOutput: true\n```\n\n**Example 2:**\n```\nInput: n = 4\nOutput: false\n```\n\n**Example 3:**\n```\nInput: n = 1\nOutput: false\n```\n\n### Constraints\n- `1 <= n <= 10^6`",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function isPrime(n) {\n  // Return true if n is a prime number, false otherwise\n  // Remember: 1 is NOT a prime number\n  \n}",
+    "functionName": "isPrime",
+    "testCases": [
+      { "input": [7], "expected": true },
+      { "input": [4], "expected": false },
+      { "input": [1], "expected": false },
+      { "input": [2], "expected": true }
+    ],
+    "hiddenTestCases": [
+      { "input": [97], "expected": true },
+      { "input": [100], "expected": false },
+      { "input": [13], "expected": true },
+      { "input": [9], "expected": false }
+    ]
+  },
+  {
+    "id": "loops-005",
+    "number": 11,
+    "title": "Digit Sum",
+    "slug": "digit-sum",
+    "description": "## Digit Sum\n\nGiven a non-negative integer `n`, return the sum of its digits.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 1234\nOutput: 10\nExplanation: 1 + 2 + 3 + 4 = 10\n```\n\n**Example 2:**\n```\nInput: n = 9999\nOutput: 36\n```\n\n### Constraints\n- `0 <= n <= 10^9`",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function digitSum(n) {\n  // Extract each digit and add them together\n  // Return the sum of all digits\n  \n}",
+    "functionName": "digitSum",
+    "testCases": [
+      { "input": [1234], "expected": 10 },
+      { "input": [9999], "expected": 36 },
+      { "input": [0], "expected": 0 },
+      { "input": [100], "expected": 1 }
+    ],
+    "hiddenTestCases": [
+      { "input": [55555], "expected": 25 },
+      { "input": [7], "expected": 7 },
+      { "input": [999999999], "expected": 81 }
+    ]
+  },
+  {
+    "id": "loops-006",
+    "number": 12,
+    "title": "Reverse a Number",
+    "slug": "reverse-number",
+    "description": "## Reverse a Number\n\nGiven an integer `n`, return the number with its digits reversed.\n\nIf the input is negative, the output should also be negative.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 1234\nOutput: 4321\n```\n\n**Example 2:**\n```\nInput: n = -567\nOutput: -765\n```\n\n**Example 3:**\n```\nInput: n = 1200\nOutput: 21\n```\n\n### Constraints\n- `-10^9 <= n <= 10^9`",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function reverseNumber(n) {\n  // Reverse the digits of the number\n  // Handle negative numbers\n  // Return the reversed number\n  \n}",
+    "functionName": "reverseNumber",
+    "testCases": [
+      { "input": [1234], "expected": 4321 },
+      { "input": [-567], "expected": -765 },
+      { "input": [1200], "expected": 21 },
+      { "input": [0], "expected": 0 }
+    ],
+    "hiddenTestCases": [
+      { "input": [1000000], "expected": 1 },
+      { "input": [-100], "expected": -1 },
+      { "input": [5], "expected": 5 }
+    ]
+  },
+  {
+    "id": "loops-007",
+    "number": 13,
+    "title": "Number Guessing Game",
+    "slug": "guessing-game",
+    "description": "## Number Guessing Game (Binary Search)\n\nYou are given a `target` number and an array of `guesses`. For each guess, return:\n- `\"Too low\"` if the guess is less than the target\n- `\"Too high\"` if the guess is greater than the target\n- `\"Correct!\"` if the guess equals the target\n\nReturn an array of result strings for each guess. Stop processing after the first correct guess.\n\n### Examples\n\n**Example 1:**\n```\nInput: target = 50, guesses = [25, 75, 50]\nOutput: [\"Too low\", \"Too high\", \"Correct!\"]\n```\n\n**Example 2:**\n```\nInput: target = 7, guesses = [5, 9, 7, 3]\nOutput: [\"Too low\", \"Too high\", \"Correct!\"]\nNote: 3 is not processed because 7 was already correct.\n```\n\n### Constraints\n- `1 <= target <= 1000`\n- `1 <= guesses.length <= 100`",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "starterCode": "function guessingGame(target, guesses) {\n  // Process each guess and return the appropriate response\n  // Stop after the first correct guess\n  // Return an array of result strings\n  \n}",
+    "functionName": "guessingGame",
+    "testCases": [
+      { "input": [50, [25, 75, 50]], "expected": ["Too low", "Too high", "Correct!"] },
+      { "input": [7, [5, 9, 7, 3]], "expected": ["Too low", "Too high", "Correct!"] },
+      { "input": [1, [1]], "expected": ["Correct!"] },
+      { "input": [100, [50, 75, 100]], "expected": ["Too low", "Too low", "Correct!"] }
+    ],
+    "hiddenTestCases": [
+      { "input": [500, [250, 750, 625, 500]], "expected": ["Too low", "Too high", "Too high", "Correct!"] },
+      { "input": [10, [20, 15, 10]], "expected": ["Too high", "Too high", "Correct!"] }
+    ]
+  },
+  {
+    "id": "patterns-001",
+    "number": 14,
+    "title": "Square Pattern",
+    "slug": "square-pattern",
+    "description": "## Square Pattern\n\nGiven a number `n`, return a square pattern of `*` as a string.\n\nEach row has `n` stars, and there are `n` rows. Rows are separated by `\\n`.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 3\nOutput:\n* * *\n* * *\n* * *\n```\n\n**Example 2:**\n```\nInput: n = 4\nOutput:\n* * * *\n* * * *\n* * * *\n* * * *\n```\n\n### Constraints\n- `1 <= n <= 20`",
+    "topic": "Patterns",
+    "difficulty": "Easy",
+    "starterCode": "function squarePattern(n) {\n  // Build a square pattern of n rows and n columns of '*'\n  // Separate stars with spaces, rows with '\\n'\n  // Return the pattern as a string\n  \n}",
+    "functionName": "squarePattern",
+    "testCases": [
+      { "input": [3], "expected": "* * *\n* * *\n* * *" },
+      { "input": [4], "expected": "* * * *\n* * * *\n* * * *\n* * * *" },
+      { "input": [1], "expected": "*" },
+      { "input": [2], "expected": "* *\n* *" }
+    ],
+    "hiddenTestCases": [
+      { "input": [5], "expected": "* * * * *\n* * * * *\n* * * * *\n* * * * *\n* * * * *" }
+    ]
+  },
+  {
+    "id": "patterns-002",
+    "number": 15,
+    "title": "Increasing Triangle",
+    "slug": "increasing-triangle",
+    "description": "## Right Triangle (Increasing)\n\nGiven a number `n`, return a right triangle pattern where row `i` has `i` stars.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 4\nOutput:\n*\n* *\n* * *\n* * * *\n```\n\n### Constraints\n- `1 <= n <= 20`",
+    "topic": "Patterns",
+    "difficulty": "Easy",
+    "starterCode": "function increasingTriangle(n) {\n  // Build a right triangle with increasing rows\n  // Row i has i stars (1-indexed)\n  // Return the pattern as a string\n  \n}",
+    "functionName": "increasingTriangle",
+    "testCases": [
+      { "input": [4], "expected": "*\n* *\n* * *\n* * * *" },
+      { "input": [1], "expected": "*" },
+      { "input": [3], "expected": "*\n* *\n* * *" },
+      { "input": [5], "expected": "*\n* *\n* * *\n* * * *\n* * * * *" }
+    ],
+    "hiddenTestCases": [
+      { "input": [2], "expected": "*\n* *" },
+      { "input": [6], "expected": "*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *" }
+    ]
+  },
+  {
+    "id": "patterns-003",
+    "number": 16,
+    "title": "Decreasing Triangle",
+    "slug": "decreasing-triangle",
+    "description": "## Right Triangle (Decreasing)\n\nGiven a number `n`, return a right triangle pattern where row `i` has `(n - i + 1)` stars.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 4\nOutput:\n* * * *\n* * *\n* *\n*\n```\n\n### Constraints\n- `1 <= n <= 20`",
+    "topic": "Patterns",
+    "difficulty": "Easy",
+    "starterCode": "function decreasingTriangle(n) {\n  // Build a right triangle with decreasing rows\n  // First row has n stars, last row has 1 star\n  // Return the pattern as a string\n  \n}",
+    "functionName": "decreasingTriangle",
+    "testCases": [
+      { "input": [4], "expected": "* * * *\n* * *\n* *\n*" },
+      { "input": [1], "expected": "*" },
+      { "input": [3], "expected": "* * *\n* *\n*" },
+      { "input": [5], "expected": "* * * * *\n* * * *\n* * *\n* *\n*" }
+    ],
+    "hiddenTestCases": [
+      { "input": [2], "expected": "* *\n*" },
+      { "input": [6], "expected": "* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*" }
+    ]
+  },
+  {
+    "id": "patterns-004",
+    "number": 17,
+    "title": "Number Triangle",
+    "slug": "number-triangle",
+    "description": "## Number Triangle\n\nGiven a number `n`, return a triangle where each row `i` contains numbers from 1 to `i`.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 4\nOutput:\n1\n1 2\n1 2 3\n1 2 3 4\n```\n\n### Constraints\n- `1 <= n <= 9`",
+    "topic": "Patterns",
+    "difficulty": "Easy",
+    "starterCode": "function numberTriangle(n) {\n  // Build a triangle where row i has numbers 1 to i\n  // Return the pattern as a string\n  \n}",
+    "functionName": "numberTriangle",
+    "testCases": [
+      { "input": [4], "expected": "1\n1 2\n1 2 3\n1 2 3 4" },
+      { "input": [1], "expected": "1" },
+      { "input": [3], "expected": "1\n1 2\n1 2 3" },
+      { "input": [5], "expected": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5" }
+    ],
+    "hiddenTestCases": [
+      { "input": [2], "expected": "1\n1 2" },
+      { "input": [6], "expected": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5\n1 2 3 4 5 6" }
+    ]
+  },
+  {
+    "id": "patterns-005",
+    "number": 18,
+    "title": "Alphabet Triangle",
+    "slug": "alphabet-triangle",
+    "description": "## Alphabet Triangle\n\nGiven a number `n`, return a triangle where each row `i` has the first `i` uppercase letters.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 4\nOutput:\nA\nA B\nA B C\nA B C D\n```\n\n### Constraints\n- `1 <= n <= 26`",
+    "topic": "Patterns",
+    "difficulty": "Easy",
+    "starterCode": "function alphabetTriangle(n) {\n  // Build a triangle where row i has first i letters\n  // Use uppercase letters A, B, C, ...\n  // Return the pattern as a string\n  \n}",
+    "functionName": "alphabetTriangle",
+    "testCases": [
+      { "input": [4], "expected": "A\nA B\nA B C\nA B C D" },
+      { "input": [1], "expected": "A" },
+      { "input": [3], "expected": "A\nA B\nA B C" },
+      { "input": [5], "expected": "A\nA B\nA B C\nA B C D\nA B C D E" }
+    ],
+    "hiddenTestCases": [
+      { "input": [2], "expected": "A\nA B" },
+      { "input": [6], "expected": "A\nA B\nA B C\nA B C D\nA B C D E\nA B C D E F" }
+    ]
+  },
+  {
+    "id": "patterns-006",
+    "number": 19,
+    "title": "Mirror Triangle (Pyramid)",
+    "slug": "mirror-triangle",
+    "description": "## Mirror Triangle (Pyramid)\n\nGiven a number `n`, return a centered pyramid pattern.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 4\nOutput:\n      *\n    * * *\n  * * * * *\n* * * * * * *\n```\n\nEach row `i` (1-indexed) has `(2*i - 1)` stars centered with leading spaces.\n\n### Constraints\n- `1 <= n <= 20`",
+    "topic": "Patterns",
+    "difficulty": "Medium",
+    "starterCode": "function mirrorTriangle(n) {\n  // Build a centered pyramid pattern\n  // Row i has (2*i - 1) stars, centered with spaces\n  // Return the pattern as a string\n  \n}",
+    "functionName": "mirrorTriangle",
+    "testCases": [
+      { "input": [3], "expected": "    *\n  * * *\n* * * * *" },
+      { "input": [1], "expected": "*" },
+      { "input": [2], "expected": "  *\n* * *" },
+      { "input": [4], "expected": "      *\n    * * *\n  * * * * *\n* * * * * * *" }
+    ],
+    "hiddenTestCases": [
+      { "input": [5], "expected": "        *\n      * * *\n    * * * * *\n  * * * * * * *\n* * * * * * * * *" }
+    ]
+  },
+  {
+    "id": "patterns-007",
+    "number": 20,
+    "title": "Hollow Triangle",
+    "slug": "hollow-triangle",
+    "description": "## Hollow Triangle\n\nGiven a number `n`, return a hollow right triangle.\n\nOnly the border positions have `*`, interior positions have spaces.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 5\nOutput:\n*\n* *\n*   *\n*     *\n* * * * *\n```\n\n### Constraints\n- `1 <= n <= 20`\n- For n <= 2, the triangle is fully filled (no hollow interior)",
+    "topic": "Patterns",
+    "difficulty": "Medium",
+    "starterCode": "function hollowTriangle(n) {\n  // Build a hollow right triangle\n  // Only border positions have '*'\n  // Interior positions are spaces\n  // Return the pattern as a string\n  \n}",
+    "functionName": "hollowTriangle",
+    "testCases": [
+      { "input": [5], "expected": "*\n* *\n*   *\n*     *\n* * * * *" },
+      { "input": [1], "expected": "*" },
+      { "input": [3], "expected": "*\n* *\n* * *" },
+      { "input": [4], "expected": "*\n* *\n*   *\n* * * *" }
+    ],
+    "hiddenTestCases": [
+      { "input": [2], "expected": "*\n* *" },
+      { "input": [6], "expected": "*\n* *\n*   *\n*     *\n*       *\n* * * * * *" }
+    ]
+  },
+  {
+    "id": "patterns-008",
+    "number": 21,
+    "title": "X Pattern",
+    "slug": "x-pattern",
+    "description": "## X Pattern\n\nGiven an **odd** number `n`, return an X pattern using `*` and spaces.\n\nThe X is formed by placing stars on the two diagonals of an n×n grid.\n\n### Examples\n\n**Example 1:**\n```\nInput: n = 5\nOutput:\n*       *\n  *   *\n    *\n  *   *\n*       *\n```\n\n### Constraints\n- `3 <= n <= 21`\n- `n` is always odd",
+    "topic": "Patterns",
+    "difficulty": "Medium",
+    "starterCode": "function xPattern(n) {\n  // Build an X pattern on an n×n grid\n  // Place '*' on both diagonals\n  // Fill other positions with spaces\n  // Return the pattern as a string\n  \n}",
+    "functionName": "xPattern",
+    "testCases": [
+      { "input": [5], "expected": "*       *\n  *   *\n    *\n  *   *\n*       *" },
+      { "input": [3], "expected": "*   *\n  *\n*   *" },
+      { "input": [7], "expected": "*           *\n  *       *\n    *   *\n      *\n    *   *\n  *       *\n*           *" }
+    ],
+    "hiddenTestCases": [
+      { "input": [9], "expected": "*               *\n  *           *\n    *       *\n      *   *\n        *\n      *   *\n    *       *\n  *           *\n*               *" }
+    ]
+  },
+  {
+    "id": "arrays-001",
+    "number": 22,
+    "title": "Array Sum",
+    "slug": "array-sum",
+    "description": "## Array Sum\n\nGiven an array of numbers `arr`, return the sum of all elements.\n\nDo **not** use built-in methods like `reduce`. Use a loop.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5]\nOutput: 15\n```\n\n**Example 2:**\n```\nInput: arr = [-1, -2, -3]\nOutput: -6\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `-10^6 <= arr[i] <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function arraySum(arr) {\n  // Use a loop to calculate the sum of all elements\n  // Return the sum\n  \n}",
+    "functionName": "arraySum",
+    "testCases": [
+      { "input": [[1, 2, 3, 4, 5]], "expected": 15 },
+      { "input": [[-1, -2, -3]], "expected": -6 },
+      { "input": [[]], "expected": 0 },
+      { "input": [[42]], "expected": 42 }
+    ],
+    "hiddenTestCases": [
+      { "input": [[0, 0, 0, 0]], "expected": 0 },
+      { "input": [[100, -100, 50, -50]], "expected": 0 },
+      { "input": [[1000000, -1000000]], "expected": 0 }
+    ]
+  },
+  {
+    "id": "arrays-002",
+    "number": 23,
+    "title": "Reverse Array (Extra Space)",
+    "slug": "reverse-array-extra-space",
+    "description": "## Reverse Array Using Extra Space\n\nGiven an array `arr`, return a new array with elements in reverse order.\n\nYou must create a new array (do not modify the original). Do **not** use `.reverse()`.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5]\nOutput: [5, 4, 3, 2, 1]\n```\n\n**Example 2:**\n```\nInput: arr = [10]\nOutput: [10]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function reverseArrayExtra(arr) {\n  // Create a NEW array with elements in reverse order\n  // Do NOT modify the original array\n  // Do NOT use .reverse()\n  // Return the reversed array\n  \n}",
+    "functionName": "reverseArrayExtra",
+    "testCases": [
+      { "input": [[1, 2, 3, 4, 5]], "expected": [5, 4, 3, 2, 1] },
+      { "input": [[10]], "expected": [10] },
+      { "input": [[]], "expected": [] },
+      { "input": [[1, 2]], "expected": [2, 1] }
+    ],
+    "hiddenTestCases": [
+      { "input": [["a", "b", "c"]], "expected": ["c", "b", "a"] },
+      { "input": [[0, 0, 0]], "expected": [0, 0, 0] },
+      { "input": [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]], "expected": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1] }
+    ]
+  },
+  {
+    "id": "arrays-003",
+    "number": 24,
+    "title": "Reverse Array (In Place)",
+    "slug": "reverse-array-in-place",
+    "description": "## Reverse Array In Place\n\nGiven an array `arr`, reverse it **in place** (modify the original array) and return it.\n\nUse the two-pointer technique. Do **not** use `.reverse()` or create a new array.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5]\nOutput: [5, 4, 3, 2, 1]\n```\n\n**Example 2:**\n```\nInput: arr = [7, 8, 9]\nOutput: [9, 8, 7]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function reverseInPlace(arr) {\n  // Reverse the array IN PLACE using two pointers\n  // Do NOT use .reverse() or create a new array\n  // Return the modified array\n  \n}",
+    "functionName": "reverseInPlace",
+    "testCases": [
+      { "input": [[1, 2, 3, 4, 5]], "expected": [5, 4, 3, 2, 1] },
+      { "input": [[7, 8, 9]], "expected": [9, 8, 7] },
+      { "input": [[]], "expected": [] },
+      { "input": [[1]], "expected": [1] }
+    ],
+    "hiddenTestCases": [
+      { "input": [[1, 2]], "expected": [2, 1] },
+      { "input": [[5, 4, 3, 2, 1]], "expected": [1, 2, 3, 4, 5] },
+      { "input": [[0, 0, 0, 0]], "expected": [0, 0, 0, 0] }
+    ]
+  },
+  {
+    "id": "arrays-004",
+    "number": 25,
+    "title": "Move Zeroes Left, Ones Right",
+    "slug": "move-zeroes-ones",
+    "description": "## Move Zeroes to Left, Ones to Right\n\nGiven a binary array `arr` (containing only 0s and 1s), rearrange it so that all 0s come before all 1s.\n\nReturn the modified array. You may modify it in place or create a new one.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 0, 1, 0, 0, 1]\nOutput: [0, 0, 0, 1, 1, 1]\n```\n\n**Example 2:**\n```\nInput: arr = [0, 0, 0]\nOutput: [0, 0, 0]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `arr[i]` is either 0 or 1",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "starterCode": "function moveZeroesOnes(arr) {\n  // Rearrange so all 0s come before all 1s\n  // Return the rearranged array\n  \n}",
+    "functionName": "moveZeroesOnes",
+    "testCases": [
+      { "input": [[1, 0, 1, 0, 0, 1]], "expected": [0, 0, 0, 1, 1, 1] },
+      { "input": [[0, 0, 0]], "expected": [0, 0, 0] },
+      { "input": [[1, 1, 1]], "expected": [1, 1, 1] },
+      { "input": [[]], "expected": [] }
+    ],
+    "hiddenTestCases": [
+      { "input": [[1, 0]], "expected": [0, 1] },
+      { "input": [[0, 1, 0, 1, 0, 1, 0, 1]], "expected": [0, 0, 0, 0, 1, 1, 1, 1] },
+      { "input": [[0]], "expected": [0] },
+      { "input": [[1]], "expected": [1] }
+    ]
+  }
+]
