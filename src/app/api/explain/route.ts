@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import { requireAuth, checkRateLimit, incrementRateLimit } from '@/lib/ai-utils';
 import { getDb } from '@/lib/mongodb';
 
@@ -39,26 +39,25 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    if (!process.env.ANTHROPIC_API_KEY) {
+    const apiKey = process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) {
       return NextResponse.json(
-        { error: 'AI service is not configured. Please set ANTHROPIC_API_KEY.' },
+        { error: 'AI service is not configured. Please set OPENAI_API_KEY.' },
         { status: 503 }
       );
     }
 
-    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    let explanation = '';
 
-    const message = await anthropic.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 1200,
-      messages: [
-        {
-          role: 'user',
-          content: `You are a DSA tutor. Provide a detailed step-by-step walkthrough of the optimal solution for this problem.
-
-Problem: ${problemTitle}
-Description: ${problemDescription}
-
+    if (process.env.OPENAI_API_KEY) {
+      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        max_tokens: 1200,
+        messages: [
+          {
+            role: 'system',
+            content: `You are a DSA tutor. Provide a detailed step-by-step walkthrough of the optimal solution for this problem.
 Include:
 1. Approach explanation (intuition)
 2. Step-by-step algorithm
@@ -66,12 +65,16 @@ Include:
 4. Time & space complexity analysis
 5. Edge cases to consider
 
-Format your response clearly with headings and code blocks.`,
-        },
-      ],
-    });
-
-    const explanation = message.content[0].type === 'text' ? message.content[0].text : '';
+Format your response clearly with markdown headings and code blocks.`,
+          },
+          {
+            role: 'user',
+            content: `Problem: ${problemTitle}\nDescription: ${problemDescription}`,
+          },
+        ],
+      });
+      explanation = response.choices[0]?.message?.content || '';
+    }
 
     await incrementRateLimit(session.user!.id!);
 

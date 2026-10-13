@@ -30,6 +30,10 @@
   --accent-purple-dim: rgba(168, 85, 247, 0.15);
   --accent-cyan: #06b6d4;
   --accent-cyan-dim: rgba(6, 182, 212, 0.15);
+  --accent-orange: #f97316;
+  --accent-orange-dim: rgba(249, 115, 22, 0.15);
+  --accent-pink: #ec4899;
+  --accent-pink-dim: rgba(236, 72, 153, 0.15);
   
   --gradient-primary: linear-gradient(135deg, #3b82f6, #a855f7);
   --gradient-success: linear-gradient(135deg, #22c55e, #06b6d4);

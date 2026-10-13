@@ -14,7 +14,7 @@ interface ProblemSummary {
   difficulty: string;
 }
 
-const topics = ['all', 'Basic', 'Loops', 'Patterns', 'Arrays'];
+const topics = ['all', 'Basic', 'Loops', 'Patterns', 'Arrays', 'Strings', 'Sorting'];
 const difficulties = ['all', 'Easy', 'Medium', 'Hard'];
 
 const topicIcons: Record<string, string> = {
@@ -22,6 +22,8 @@ const topicIcons: Record<string, string> = {
   Loops: '🔄',
   Patterns: '🎨',
   Arrays: '📦',
+  Strings: '🔤',
+  Sorting: '⚡',
 };
 
 export default function HomePage() {

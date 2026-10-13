@@ -10,15 +10,78 @@
     "starterCode": "function swapWithTemp(a, b) {\n  // Use a temporary variable to swap a and b\n  // Return the swapped values as [b, a]\n  \n}",
     "functionName": "swapWithTemp",
     "testCases": [
-      { "input": [5, 10], "expected": [10, 5] },
-      { "input": [-3, 7], "expected": [7, -3] },
-      { "input": [0, 0], "expected": [0, 0] },
-      { "input": [100, -100], "expected": [-100, 100] }
+      {
+        "input": [
+          5,
+          10
+        ],
+        "expected": [
+          10,
+          5
+        ]
+      },
+      {
+        "input": [
+          -3,
+          7
+        ],
+        "expected": [
+          7,
+          -3
+        ]
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "input": [
+          100,
+          -100
+        ],
+        "expected": [
+          -100,
+          100
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [999999, -999999], "expected": [-999999, 999999] },
-      { "input": [1, 1], "expected": [1, 1] },
-      { "input": [42, 0], "expected": [0, 42] }
+      {
+        "input": [
+          999999,
+          -999999
+        ],
+        "expected": [
+          -999999,
+          999999
+        ]
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          42,
+          0
+        ],
+        "expected": [
+          0,
+          42
+        ]
+      }
     ]
   },
   {
@@ -32,15 +95,78 @@
     "starterCode": "function swapArithmetic(a, b) {\n  // Swap a and b using only + and - operators\n  // Do NOT use a temporary variable\n  // Return the swapped values as [b, a]\n  \n}",
     "functionName": "swapArithmetic",
     "testCases": [
-      { "input": [3, 8], "expected": [8, 3] },
-      { "input": [15, 20], "expected": [20, 15] },
-      { "input": [0, 5], "expected": [5, 0] },
-      { "input": [-10, 10], "expected": [10, -10] }
+      {
+        "input": [
+          3,
+          8
+        ],
+        "expected": [
+          8,
+          3
+        ]
+      },
+      {
+        "input": [
+          15,
+          20
+        ],
+        "expected": [
+          20,
+          15
+        ]
+      },
+      {
+        "input": [
+          0,
+          5
+        ],
+        "expected": [
+          5,
+          0
+        ]
+      },
+      {
+        "input": [
+          -10,
+          10
+        ],
+        "expected": [
+          10,
+          -10
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [500000, -500000], "expected": [-500000, 500000] },
-      { "input": [7, 7], "expected": [7, 7] },
-      { "input": [-1, -1], "expected": [-1, -1] }
+      {
+        "input": [
+          500000,
+          -500000
+        ],
+        "expected": [
+          -500000,
+          500000
+        ]
+      },
+      {
+        "input": [
+          7,
+          7
+        ],
+        "expected": [
+          7,
+          7
+        ]
+      },
+      {
+        "input": [
+          -1,
+          -1
+        ],
+        "expected": [
+          -1,
+          -1
+        ]
+      }
     ]
   },
   {
@@ -54,15 +180,78 @@
     "starterCode": "function swapXOR(a, b) {\n  // Swap a and b using only the XOR (^) operator\n  // Do NOT use a temporary variable or arithmetic\n  // Return the swapped values as [b, a]\n  \n}",
     "functionName": "swapXOR",
     "testCases": [
-      { "input": [4, 9], "expected": [9, 4] },
-      { "input": [12, 25], "expected": [25, 12] },
-      { "input": [0, 7], "expected": [7, 0] },
-      { "input": [1, 1], "expected": [1, 1] }
+      {
+        "input": [
+          4,
+          9
+        ],
+        "expected": [
+          9,
+          4
+        ]
+      },
+      {
+        "input": [
+          12,
+          25
+        ],
+        "expected": [
+          25,
+          12
+        ]
+      },
+      {
+        "input": [
+          0,
+          7
+        ],
+        "expected": [
+          7,
+          0
+        ]
+      },
+      {
+        "input": [
+          1,
+          1
+        ],
+        "expected": [
+          1,
+          1
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [255, 128], "expected": [128, 255] },
-      { "input": [0, 0], "expected": [0, 0] },
-      { "input": [1000, 2000], "expected": [2000, 1000] }
+      {
+        "input": [
+          255,
+          128
+        ],
+        "expected": [
+          128,
+          255
+        ]
+      },
+      {
+        "input": [
+          0,
+          0
+        ],
+        "expected": [
+          0,
+          0
+        ]
+      },
+      {
+        "input": [
+          1000,
+          2000
+        ],
+        "expected": [
+          2000,
+          1000
+        ]
+      }
     ]
   },
   {
@@ -76,15 +265,57 @@
     "starterCode": "function calculateDiscount(price, discountPercent) {\n  // Calculate the final price after discount\n  // Round to 2 decimal places\n  // Return the final price\n  \n}",
     "functionName": "calculateDiscount",
     "testCases": [
-      { "input": [1000, 20], "expected": 800 },
-      { "input": [49.99, 15], "expected": 42.49 },
-      { "input": [500, 0], "expected": 500 },
-      { "input": [200, 100], "expected": 0 }
+      {
+        "input": [
+          1000,
+          20
+        ],
+        "expected": 800
+      },
+      {
+        "input": [
+          49.99,
+          15
+        ],
+        "expected": 42.49
+      },
+      {
+        "input": [
+          500,
+          0
+        ],
+        "expected": 500
+      },
+      {
+        "input": [
+          200,
+          100
+        ],
+        "expected": 0
+      }
     ],
     "hiddenTestCases": [
-      { "input": [99.99, 50], "expected": 50 },
-      { "input": [1, 10], "expected": 0.9 },
-      { "input": [0, 50], "expected": 0 }
+      {
+        "input": [
+          99.99,
+          50
+        ],
+        "expected": 50
+      },
+      {
+        "input": [
+          1,
+          10
+        ],
+        "expected": 0.9
+      },
+      {
+        "input": [
+          0,
+          50
+        ],
+        "expected": 0
+      }
     ]
   },
   {
@@ -98,16 +329,56 @@
     "starterCode": "function electricityBill(units) {\n  // Calculate the electricity bill based on slab rates\n  // First 100: ₹1.50, Next 100: ₹2.50, Next 100: ₹4.00, Above 300: ₹6.00\n  // Return the total bill rounded to 2 decimal places\n  \n}",
     "functionName": "electricityBill",
     "testCases": [
-      { "input": [50], "expected": 75 },
-      { "input": [250], "expected": 600 },
-      { "input": [350], "expected": 1100 },
-      { "input": [0], "expected": 0 }
+      {
+        "input": [
+          50
+        ],
+        "expected": 75
+      },
+      {
+        "input": [
+          250
+        ],
+        "expected": 600
+      },
+      {
+        "input": [
+          350
+        ],
+        "expected": 1100
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      }
     ],
     "hiddenTestCases": [
-      { "input": [100], "expected": 150 },
-      { "input": [200], "expected": 400 },
-      { "input": [300], "expected": 800 },
-      { "input": [500], "expected": 2300 }
+      {
+        "input": [
+          100
+        ],
+        "expected": 150
+      },
+      {
+        "input": [
+          200
+        ],
+        "expected": 400
+      },
+      {
+        "input": [
+          300
+        ],
+        "expected": 800
+      },
+      {
+        "input": [
+          500
+        ],
+        "expected": 2300
+      }
     ]
   },
   {
@@ -121,15 +392,72 @@
     "starterCode": "function noteCounter(amount) {\n  // Available denominations: [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]\n  // Return an object with denomination as key and count as value\n  // Only include denominations with count > 0\n  \n}",
     "functionName": "noteCounter",
     "testCases": [
-      { "input": [2763], "expected": {"2000": 1, "500": 1, "200": 1, "50": 1, "10": 1, "2": 1, "1": 1} },
-      { "input": [1000], "expected": {"500": 2} },
-      { "input": [0], "expected": {} },
-      { "input": [1], "expected": {"1": 1} }
+      {
+        "input": [
+          2763
+        ],
+        "expected": {
+          "1": 1,
+          "2": 1,
+          "10": 1,
+          "50": 1,
+          "200": 1,
+          "500": 1,
+          "2000": 1
+        }
+      },
+      {
+        "input": [
+          1000
+        ],
+        "expected": {
+          "500": 2
+        }
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": {}
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": {
+          "1": 1
+        }
+      }
     ],
     "hiddenTestCases": [
-      { "input": [5555], "expected": {"2000": 2, "500": 3, "50": 1, "5": 1} },
-      { "input": [2000], "expected": {"2000": 1} },
-      { "input": [9], "expected": {"5": 1, "2": 2} }
+      {
+        "input": [
+          5555
+        ],
+        "expected": {
+          "5": 1,
+          "50": 1,
+          "500": 3,
+          "2000": 2
+        }
+      },
+      {
+        "input": [
+          2000
+        ],
+        "expected": {
+          "2000": 1
+        }
+      },
+      {
+        "input": [
+          9
+        ],
+        "expected": {
+          "2": 2,
+          "5": 1
+        }
+      }
     ]
   },
   {
@@ -143,15 +471,50 @@
     "starterCode": "function sumOfN(n) {\n  // Use a loop to calculate sum of 1 to n\n  // Return the sum\n  \n}",
     "functionName": "sumOfN",
     "testCases": [
-      { "input": [5], "expected": 15 },
-      { "input": [10], "expected": 55 },
-      { "input": [1], "expected": 1 },
-      { "input": [100], "expected": 5050 }
+      {
+        "input": [
+          5
+        ],
+        "expected": 15
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 55
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          100
+        ],
+        "expected": 5050
+      }
     ],
     "hiddenTestCases": [
-      { "input": [1000], "expected": 500500 },
-      { "input": [50], "expected": 1275 },
-      { "input": [2], "expected": 3 }
+      {
+        "input": [
+          1000
+        ],
+        "expected": 500500
+      },
+      {
+        "input": [
+          50
+        ],
+        "expected": 1275
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": 3
+      }
     ]
   },
   {
@@ -165,15 +528,50 @@
     "starterCode": "function factorial(n) {\n  // Calculate n! using a loop\n  // Remember: 0! = 1\n  // Return the factorial\n  \n}",
     "functionName": "factorial",
     "testCases": [
-      { "input": [5], "expected": 120 },
-      { "input": [0], "expected": 1 },
-      { "input": [1], "expected": 1 },
-      { "input": [10], "expected": 3628800 }
+      {
+        "input": [
+          5
+        ],
+        "expected": 120
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          10
+        ],
+        "expected": 3628800
+      }
     ],
     "hiddenTestCases": [
-      { "input": [3], "expected": 6 },
-      { "input": [7], "expected": 5040 },
-      { "input": [12], "expected": 479001600 }
+      {
+        "input": [
+          3
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": 5040
+      },
+      {
+        "input": [
+          12
+        ],
+        "expected": 479001600
+      }
     ]
   },
   {
@@ -187,15 +585,92 @@
     "starterCode": "function findDivisors(n) {\n  // Find all numbers that divide n evenly\n  // Return them in ascending order as an array\n  \n}",
     "functionName": "findDivisors",
     "testCases": [
-      { "input": [12], "expected": [1, 2, 3, 4, 6, 12] },
-      { "input": [7], "expected": [1, 7] },
-      { "input": [1], "expected": [1] },
-      { "input": [28], "expected": [1, 2, 4, 7, 14, 28] }
+      {
+        "input": [
+          12
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          12
+        ]
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": [
+          1,
+          7
+        ]
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          28
+        ],
+        "expected": [
+          1,
+          2,
+          4,
+          7,
+          14,
+          28
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [100], "expected": [1, 2, 4, 5, 10, 20, 25, 50, 100] },
-      { "input": [2], "expected": [1, 2] },
-      { "input": [36], "expected": [1, 2, 3, 4, 6, 9, 12, 18, 36] }
+      {
+        "input": [
+          100
+        ],
+        "expected": [
+          1,
+          2,
+          4,
+          5,
+          10,
+          20,
+          25,
+          50,
+          100
+        ]
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          36
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          9,
+          12,
+          18,
+          36
+        ]
+      }
     ]
   },
   {
@@ -209,16 +684,56 @@
     "starterCode": "function isPrime(n) {\n  // Return true if n is a prime number, false otherwise\n  // Remember: 1 is NOT a prime number\n  \n}",
     "functionName": "isPrime",
     "testCases": [
-      { "input": [7], "expected": true },
-      { "input": [4], "expected": false },
-      { "input": [1], "expected": false },
-      { "input": [2], "expected": true }
+      {
+        "input": [
+          7
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": true
+      }
     ],
     "hiddenTestCases": [
-      { "input": [97], "expected": true },
-      { "input": [100], "expected": false },
-      { "input": [13], "expected": true },
-      { "input": [9], "expected": false }
+      {
+        "input": [
+          97
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          100
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          13
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          9
+        ],
+        "expected": false
+      }
     ]
   },
   {
@@ -232,15 +747,50 @@
     "starterCode": "function digitSum(n) {\n  // Extract each digit and add them together\n  // Return the sum of all digits\n  \n}",
     "functionName": "digitSum",
     "testCases": [
-      { "input": [1234], "expected": 10 },
-      { "input": [9999], "expected": 36 },
-      { "input": [0], "expected": 0 },
-      { "input": [100], "expected": 1 }
+      {
+        "input": [
+          1234
+        ],
+        "expected": 10
+      },
+      {
+        "input": [
+          9999
+        ],
+        "expected": 36
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          100
+        ],
+        "expected": 1
+      }
     ],
     "hiddenTestCases": [
-      { "input": [55555], "expected": 25 },
-      { "input": [7], "expected": 7 },
-      { "input": [999999999], "expected": 81 }
+      {
+        "input": [
+          55555
+        ],
+        "expected": 25
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          999999999
+        ],
+        "expected": 81
+      }
     ]
   },
   {
@@ -254,15 +804,50 @@
     "starterCode": "function reverseNumber(n) {\n  // Reverse the digits of the number\n  // Handle negative numbers\n  // Return the reversed number\n  \n}",
     "functionName": "reverseNumber",
     "testCases": [
-      { "input": [1234], "expected": 4321 },
-      { "input": [-567], "expected": -765 },
-      { "input": [1200], "expected": 21 },
-      { "input": [0], "expected": 0 }
+      {
+        "input": [
+          1234
+        ],
+        "expected": 4321
+      },
+      {
+        "input": [
+          -567
+        ],
+        "expected": -765
+      },
+      {
+        "input": [
+          1200
+        ],
+        "expected": 21
+      },
+      {
+        "input": [
+          0
+        ],
+        "expected": 0
+      }
     ],
     "hiddenTestCases": [
-      { "input": [1000000], "expected": 1 },
-      { "input": [-100], "expected": -1 },
-      { "input": [5], "expected": 5 }
+      {
+        "input": [
+          1000000
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          -100
+        ],
+        "expected": -1
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": 5
+      }
     ]
   },
   {
@@ -276,14 +861,97 @@
     "starterCode": "function guessingGame(target, guesses) {\n  // Process each guess and return the appropriate response\n  // Stop after the first correct guess\n  // Return an array of result strings\n  \n}",
     "functionName": "guessingGame",
     "testCases": [
-      { "input": [50, [25, 75, 50]], "expected": ["Too low", "Too high", "Correct!"] },
-      { "input": [7, [5, 9, 7, 3]], "expected": ["Too low", "Too high", "Correct!"] },
-      { "input": [1, [1]], "expected": ["Correct!"] },
-      { "input": [100, [50, 75, 100]], "expected": ["Too low", "Too low", "Correct!"] }
+      {
+        "input": [
+          50,
+          [
+            25,
+            75,
+            50
+          ]
+        ],
+        "expected": [
+          "Too low",
+          "Too high",
+          "Correct!"
+        ]
+      },
+      {
+        "input": [
+          7,
+          [
+            5,
+            9,
+            7,
+            3
+          ]
+        ],
+        "expected": [
+          "Too low",
+          "Too high",
+          "Correct!"
+        ]
+      },
+      {
+        "input": [
+          1,
+          [
+            1
+          ]
+        ],
+        "expected": [
+          "Correct!"
+        ]
+      },
+      {
+        "input": [
+          100,
+          [
+            50,
+            75,
+            100
+          ]
+        ],
+        "expected": [
+          "Too low",
+          "Too low",
+          "Correct!"
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [500, [250, 750, 625, 500]], "expected": ["Too low", "Too high", "Too high", "Correct!"] },
-      { "input": [10, [20, 15, 10]], "expected": ["Too high", "Too high", "Correct!"] }
+      {
+        "input": [
+          500,
+          [
+            250,
+            750,
+            625,
+            500
+          ]
+        ],
+        "expected": [
+          "Too low",
+          "Too high",
+          "Too high",
+          "Correct!"
+        ]
+      },
+      {
+        "input": [
+          10,
+          [
+            20,
+            15,
+            10
+          ]
+        ],
+        "expected": [
+          "Too high",
+          "Too high",
+          "Correct!"
+        ]
+      }
     ]
   },
   {
@@ -297,13 +965,38 @@
     "starterCode": "function squarePattern(n) {\n  // Build a square pattern of n rows and n columns of '*'\n  // Separate stars with spaces, rows with '\\n'\n  // Return the pattern as a string\n  \n}",
     "functionName": "squarePattern",
     "testCases": [
-      { "input": [3], "expected": "* * *\n* * *\n* * *" },
-      { "input": [4], "expected": "* * * *\n* * * *\n* * * *\n* * * *" },
-      { "input": [1], "expected": "*" },
-      { "input": [2], "expected": "* *\n* *" }
+      {
+        "input": [
+          3
+        ],
+        "expected": "* * *\n* * *\n* * *"
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": "* * * *\n* * * *\n* * * *\n* * * *"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "*"
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": "* *\n* *"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [5], "expected": "* * * * *\n* * * * *\n* * * * *\n* * * * *\n* * * * *" }
+      {
+        "input": [
+          5
+        ],
+        "expected": "* * * * *\n* * * * *\n* * * * *\n* * * * *\n* * * * *"
+      }
     ]
   },
   {
@@ -317,14 +1010,44 @@
     "starterCode": "function increasingTriangle(n) {\n  // Build a right triangle with increasing rows\n  // Row i has i stars (1-indexed)\n  // Return the pattern as a string\n  \n}",
     "functionName": "increasingTriangle",
     "testCases": [
-      { "input": [4], "expected": "*\n* *\n* * *\n* * * *" },
-      { "input": [1], "expected": "*" },
-      { "input": [3], "expected": "*\n* *\n* * *" },
-      { "input": [5], "expected": "*\n* *\n* * *\n* * * *\n* * * * *" }
+      {
+        "input": [
+          4
+        ],
+        "expected": "*\n* *\n* * *\n* * * *"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "*"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": "*\n* *\n* * *"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": "*\n* *\n* * *\n* * * *\n* * * * *"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [2], "expected": "*\n* *" },
-      { "input": [6], "expected": "*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *" }
+      {
+        "input": [
+          2
+        ],
+        "expected": "*\n* *"
+      },
+      {
+        "input": [
+          6
+        ],
+        "expected": "*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *"
+      }
     ]
   },
   {
@@ -338,14 +1061,44 @@
     "starterCode": "function decreasingTriangle(n) {\n  // Build a right triangle with decreasing rows\n  // First row has n stars, last row has 1 star\n  // Return the pattern as a string\n  \n}",
     "functionName": "decreasingTriangle",
     "testCases": [
-      { "input": [4], "expected": "* * * *\n* * *\n* *\n*" },
-      { "input": [1], "expected": "*" },
-      { "input": [3], "expected": "* * *\n* *\n*" },
-      { "input": [5], "expected": "* * * * *\n* * * *\n* * *\n* *\n*" }
+      {
+        "input": [
+          4
+        ],
+        "expected": "* * * *\n* * *\n* *\n*"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "*"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": "* * *\n* *\n*"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": "* * * * *\n* * * *\n* * *\n* *\n*"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [2], "expected": "* *\n*" },
-      { "input": [6], "expected": "* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*" }
+      {
+        "input": [
+          2
+        ],
+        "expected": "* *\n*"
+      },
+      {
+        "input": [
+          6
+        ],
+        "expected": "* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*"
+      }
     ]
   },
   {
@@ -359,14 +1112,44 @@
     "starterCode": "function numberTriangle(n) {\n  // Build a triangle where row i has numbers 1 to i\n  // Return the pattern as a string\n  \n}",
     "functionName": "numberTriangle",
     "testCases": [
-      { "input": [4], "expected": "1\n1 2\n1 2 3\n1 2 3 4" },
-      { "input": [1], "expected": "1" },
-      { "input": [3], "expected": "1\n1 2\n1 2 3" },
-      { "input": [5], "expected": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5" }
+      {
+        "input": [
+          4
+        ],
+        "expected": "1\n1 2\n1 2 3\n1 2 3 4"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "1"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": "1\n1 2\n1 2 3"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [2], "expected": "1\n1 2" },
-      { "input": [6], "expected": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5\n1 2 3 4 5 6" }
+      {
+        "input": [
+          2
+        ],
+        "expected": "1\n1 2"
+      },
+      {
+        "input": [
+          6
+        ],
+        "expected": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5\n1 2 3 4 5 6"
+      }
     ]
   },
   {
@@ -380,14 +1163,44 @@
     "starterCode": "function alphabetTriangle(n) {\n  // Build a triangle where row i has first i letters\n  // Use uppercase letters A, B, C, ...\n  // Return the pattern as a string\n  \n}",
     "functionName": "alphabetTriangle",
     "testCases": [
-      { "input": [4], "expected": "A\nA B\nA B C\nA B C D" },
-      { "input": [1], "expected": "A" },
-      { "input": [3], "expected": "A\nA B\nA B C" },
-      { "input": [5], "expected": "A\nA B\nA B C\nA B C D\nA B C D E" }
+      {
+        "input": [
+          4
+        ],
+        "expected": "A\nA B\nA B C\nA B C D"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "A"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": "A\nA B\nA B C"
+      },
+      {
+        "input": [
+          5
+        ],
+        "expected": "A\nA B\nA B C\nA B C D\nA B C D E"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [2], "expected": "A\nA B" },
-      { "input": [6], "expected": "A\nA B\nA B C\nA B C D\nA B C D E\nA B C D E F" }
+      {
+        "input": [
+          2
+        ],
+        "expected": "A\nA B"
+      },
+      {
+        "input": [
+          6
+        ],
+        "expected": "A\nA B\nA B C\nA B C D\nA B C D E\nA B C D E F"
+      }
     ]
   },
   {
@@ -401,13 +1214,38 @@
     "starterCode": "function mirrorTriangle(n) {\n  // Build a centered pyramid pattern\n  // Row i has (2*i - 1) stars, centered with spaces\n  // Return the pattern as a string\n  \n}",
     "functionName": "mirrorTriangle",
     "testCases": [
-      { "input": [3], "expected": "    *\n  * * *\n* * * * *" },
-      { "input": [1], "expected": "*" },
-      { "input": [2], "expected": "  *\n* * *" },
-      { "input": [4], "expected": "      *\n    * * *\n  * * * * *\n* * * * * * *" }
+      {
+        "input": [
+          3
+        ],
+        "expected": "    *\n  * * *\n* * * * *"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "*"
+      },
+      {
+        "input": [
+          2
+        ],
+        "expected": "  *\n* * *"
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": "      *\n    * * *\n  * * * * *\n* * * * * * *"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [5], "expected": "        *\n      * * *\n    * * * * *\n  * * * * * * *\n* * * * * * * * *" }
+      {
+        "input": [
+          5
+        ],
+        "expected": "        *\n      * * *\n    * * * * *\n  * * * * * * *\n* * * * * * * * *"
+      }
     ]
   },
   {
@@ -421,14 +1259,44 @@
     "starterCode": "function hollowTriangle(n) {\n  // Build a hollow right triangle\n  // Only border positions have '*'\n  // Interior positions are spaces\n  // Return the pattern as a string\n  \n}",
     "functionName": "hollowTriangle",
     "testCases": [
-      { "input": [5], "expected": "*\n* *\n*   *\n*     *\n* * * * *" },
-      { "input": [1], "expected": "*" },
-      { "input": [3], "expected": "*\n* *\n* * *" },
-      { "input": [4], "expected": "*\n* *\n*   *\n* * * *" }
+      {
+        "input": [
+          5
+        ],
+        "expected": "*\n* *\n*   *\n*     *\n* * * * *"
+      },
+      {
+        "input": [
+          1
+        ],
+        "expected": "*"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": "*\n* *\n* * *"
+      },
+      {
+        "input": [
+          4
+        ],
+        "expected": "*\n* *\n*   *\n* * * *"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [2], "expected": "*\n* *" },
-      { "input": [6], "expected": "*\n* *\n*   *\n*     *\n*       *\n* * * * * *" }
+      {
+        "input": [
+          2
+        ],
+        "expected": "*\n* *"
+      },
+      {
+        "input": [
+          6
+        ],
+        "expected": "*\n* *\n*   *\n*     *\n*       *\n* * * * * *"
+      }
     ]
   },
   {
@@ -442,12 +1310,32 @@
     "starterCode": "function xPattern(n) {\n  // Build an X pattern on an n×n grid\n  // Place '*' on both diagonals\n  // Fill other positions with spaces\n  // Return the pattern as a string\n  \n}",
     "functionName": "xPattern",
     "testCases": [
-      { "input": [5], "expected": "*       *\n  *   *\n    *\n  *   *\n*       *" },
-      { "input": [3], "expected": "*   *\n  *\n*   *" },
-      { "input": [7], "expected": "*           *\n  *       *\n    *   *\n      *\n    *   *\n  *       *\n*           *" }
+      {
+        "input": [
+          5
+        ],
+        "expected": "*       *\n  *   *\n    *\n  *   *\n*       *"
+      },
+      {
+        "input": [
+          3
+        ],
+        "expected": "*   *\n  *\n*   *"
+      },
+      {
+        "input": [
+          7
+        ],
+        "expected": "*           *\n  *       *\n    *   *\n      *\n    *   *\n  *       *\n*           *"
+      }
     ],
     "hiddenTestCases": [
-      { "input": [9], "expected": "*               *\n  *           *\n    *       *\n      *   *\n        *\n      *   *\n    *       *\n  *           *\n*               *" }
+      {
+        "input": [
+          9
+        ],
+        "expected": "*               *\n  *           *\n    *       *\n      *   *\n        *\n      *   *\n    *       *\n  *           *\n*               *"
+      }
     ]
   },
   {
@@ -461,15 +1349,75 @@
     "starterCode": "function arraySum(arr) {\n  // Use a loop to calculate the sum of all elements\n  // Return the sum\n  \n}",
     "functionName": "arraySum",
     "testCases": [
-      { "input": [[1, 2, 3, 4, 5]], "expected": 15 },
-      { "input": [[-1, -2, -3]], "expected": -6 },
-      { "input": [[]], "expected": 0 },
-      { "input": [[42]], "expected": 42 }
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 15
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": -6
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            42
+          ]
+        ],
+        "expected": 42
+      }
     ],
     "hiddenTestCases": [
-      { "input": [[0, 0, 0, 0]], "expected": 0 },
-      { "input": [[100, -100, 50, -50]], "expected": 0 },
-      { "input": [[1000000, -1000000]], "expected": 0 }
+      {
+        "input": [
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            100,
+            -100,
+            50,
+            -50
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1000000,
+            -1000000
+          ]
+        ],
+        "expected": 0
+      }
     ]
   },
   {
@@ -483,15 +1431,110 @@
     "starterCode": "function reverseArrayExtra(arr) {\n  // Create a NEW array with elements in reverse order\n  // Do NOT modify the original array\n  // Do NOT use .reverse()\n  // Return the reversed array\n  \n}",
     "functionName": "reverseArrayExtra",
     "testCases": [
-      { "input": [[1, 2, 3, 4, 5]], "expected": [5, 4, 3, 2, 1] },
-      { "input": [[10]], "expected": [10] },
-      { "input": [[]], "expected": [] },
-      { "input": [[1, 2]], "expected": [2, 1] }
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            10
+          ]
+        ],
+        "expected": [
+          10
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [["a", "b", "c"]], "expected": ["c", "b", "a"] },
-      { "input": [[0, 0, 0]], "expected": [0, 0, 0] },
-      { "input": [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]], "expected": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1] }
+      {
+        "input": [
+          [
+            "a",
+            "b",
+            "c"
+          ]
+        ],
+        "expected": [
+          "c",
+          "b",
+          "a"
+        ]
+      },
+      {
+        "input": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "expected": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      }
     ]
   },
   {
@@ -505,15 +1548,102 @@
     "starterCode": "function reverseInPlace(arr) {\n  // Reverse the array IN PLACE using two pointers\n  // Do NOT use .reverse() or create a new array\n  // Return the modified array\n  \n}",
     "functionName": "reverseInPlace",
     "testCases": [
-      { "input": [[1, 2, 3, 4, 5]], "expected": [5, 4, 3, 2, 1] },
-      { "input": [[7, 8, 9]], "expected": [9, 8, 7] },
-      { "input": [[]], "expected": [] },
-      { "input": [[1]], "expected": [1] }
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            7,
+            8,
+            9
+          ]
+        ],
+        "expected": [
+          9,
+          8,
+          7
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      }
     ],
     "hiddenTestCases": [
-      { "input": [[1, 2]], "expected": [2, 1] },
-      { "input": [[5, 4, 3, 2, 1]], "expected": [1, 2, 3, 4, 5] },
-      { "input": [[0, 0, 0, 0]], "expected": [0, 0, 0, 0] }
+      {
+        "input": [
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
     ]
   },
   {
@@ -527,16 +1657,2228 @@
     "starterCode": "function moveZeroesOnes(arr) {\n  // Rearrange so all 0s come before all 1s\n  // Return the rearranged array\n  \n}",
     "functionName": "moveZeroesOnes",
     "testCases": [
-      { "input": [[1, 0, 1, 0, 0, 1]], "expected": [0, 0, 0, 1, 1, 1] },
-      { "input": [[0, 0, 0]], "expected": [0, 0, 0] },
-      { "input": [[1, 1, 1]], "expected": [1, 1, 1] },
-      { "input": [[]], "expected": [] }
+      {
+        "input": [
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
     ],
     "hiddenTestCases": [
-      { "input": [[1, 0]], "expected": [0, 1] },
-      { "input": [[0, 1, 0, 1, 0, 1, 0, 1]], "expected": [0, 0, 0, 0, 1, 1, 1, 1] },
-      { "input": [[0]], "expected": [0] },
-      { "input": [[1]], "expected": [1] }
+      {
+        "input": [
+          [
+            1,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-005",
+    "number": 26,
+    "title": "Move Negatives to Left",
+    "slug": "move-negatives-left",
+    "description": "## Move Negative Numbers to Left\n\nGiven an array of numbers `arr`, rearrange the elements such that all negative numbers are moved to the left and non-negative numbers (positive numbers and zero) are on the right.\n\nPreserve the relative order of elements and return the rearranged array.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [12, 15, -4, -14, 8, -1, -4, 20, -50]\nOutput: [-4, -14, -1, -4, -50, 12, 15, 8, 20]\n```\n\n**Example 2:**\n```\nInput: arr = [-1, 2, -3, 4, 5, 6, -7, 8, 9]\nOutput: [-1, -3, -7, 2, 4, 5, 6, 8, 9]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `-10^6 <= arr[i] <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "starterCode": "function moveNegativesLeft(arr) {\n  // Move all negative numbers to left and non-negative numbers to right\n  // Return the modified array\n  \n}",
+    "functionName": "moveNegativesLeft",
+    "testCases": [
+      {
+        "input": [
+          [
+            12,
+            15,
+            -4,
+            -14,
+            8,
+            -1,
+            -4,
+            20,
+            -50
+          ]
+        ],
+        "expected": [
+          -4,
+          -14,
+          -1,
+          -4,
+          -50,
+          12,
+          15,
+          8,
+          20
+        ]
+      },
+      {
+        "input": [
+          [
+            -1,
+            2,
+            -3,
+            4,
+            5,
+            6,
+            -7,
+            8,
+            9
+          ]
+        ],
+        "expected": [
+          -1,
+          -3,
+          -7,
+          2,
+          4,
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": [
+          -1,
+          -2,
+          -3
+        ]
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            0,
+            -1,
+            0,
+            -2,
+            3
+          ]
+        ],
+        "expected": [
+          -1,
+          -2,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            -5,
+            10,
+            -3,
+            2,
+            -1
+          ]
+        ],
+        "expected": [
+          -5,
+          -3,
+          -1,
+          10,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-006",
+    "number": 27,
+    "title": "Left Shift Array by One",
+    "slug": "left-shift-array-by-one",
+    "description": "## Left Shift Array by One Position\n\nGiven an array `arr`, shift all elements to the left by 1 position. The first element should wrap around to the end of the array.\n\nModify the array in-place and return it.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5]\nOutput: [2, 3, 4, 5, 1]\n```\n\n**Example 2:**\n```\nInput: arr = [10]\nOutput: [10]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `-10^6 <= arr[i] <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function leftShiftByOne(arr) {\n  // Shift elements to the left by 1 position (first element moves to the end)\n  // Return the modified array\n  \n}",
+    "functionName": "leftShiftByOne",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          2,
+          3,
+          4,
+          5,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            10,
+            20
+          ]
+        ],
+        "expected": [
+          20,
+          10
+        ]
+      },
+      {
+        "input": [
+          [
+            7
+          ]
+        ],
+        "expected": [
+          7
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "expected": [
+          5,
+          6,
+          7,
+          8,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": [
+          -2,
+          -3,
+          -1
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-007",
+    "number": 28,
+    "title": "Right Shift Array by One",
+    "slug": "right-shift-array-by-one",
+    "description": "## Right Shift Array by One Position\n\nGiven an array `arr`, shift all elements to the right by 1 position. The last element should wrap around to the first position.\n\nModify the array in-place and return it.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5]\nOutput: [5, 1, 2, 3, 4]\n```\n\n**Example 2:**\n```\nInput: arr = [42]\nOutput: [42]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `-10^6 <= arr[i] <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function rightShiftByOne(arr) {\n  // Shift elements to the right by 1 position (last element moves to the front)\n  // Return the modified array\n  \n}",
+    "functionName": "rightShiftByOne",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": [
+          5,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            10,
+            20
+          ]
+        ],
+        "expected": [
+          20,
+          10
+        ]
+      },
+      {
+        "input": [
+          [
+            42
+          ]
+        ],
+        "expected": [
+          42
+        ]
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            9,
+            8,
+            7,
+            6
+          ]
+        ],
+        "expected": [
+          6,
+          9,
+          8,
+          7
+        ]
+      },
+      {
+        "input": [
+          [
+            -3,
+            -2,
+            -1
+          ]
+        ],
+        "expected": [
+          -1,
+          -3,
+          -2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-008",
+    "number": 29,
+    "title": "Left Rotate Array by K (Brute Force)",
+    "slug": "left-rotate-array-k-brute",
+    "description": "## Left Rotate Array by K Positions (Brute Force)\n\nGiven an array `arr` and an integer `k`, rotate the array to the left by `k` positions by shifting elements left by 1 position `k` times.\n\nHandle cases where `k >= arr.length` using modulo (`k = k % arr.length`).\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 2\nOutput: [3, 4, 5, 1, 2]\n```\n\n**Example 2:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 4\nOutput: [5, 1, 2, 3, 4]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^4`\n- `0 <= k <= 10^5`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function leftRotateBruteForce(arr, k) {\n  // Rotate array left by k steps using brute force (repeated shifting)\n  // Return the rotated array\n  \n}",
+    "functionName": "leftRotateBruteForce",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          3,
+          4,
+          5,
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          4
+        ],
+        "expected": [
+          5,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          0
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [],
+          3
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            10,
+            20,
+            30,
+            40
+          ],
+          5
+        ],
+        "expected": [
+          20,
+          30,
+          40,
+          10
+        ]
+      },
+      {
+        "input": [
+          [
+            7
+          ],
+          10
+        ],
+        "expected": [
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-009",
+    "number": 30,
+    "title": "Left Rotate Array by K (Extra Space)",
+    "slug": "left-rotate-array-k-extra-space",
+    "description": "## Left Rotate Array by K Positions (Extra Space)\n\nGiven an array `arr` and an integer `k`, rotate the array to the left by `k` positions using a temporary extra array and modular indexing `(i + k) % n`.\n\nReturn the rotated array.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 4\nOutput: [5, 1, 2, 3, 4]\n```\n\n**Example 2:**\n```\nInput: arr = [10, 20, 30, 40, 50], k = 2\nOutput: [30, 40, 50, 10, 20]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `0 <= k <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function leftRotateExtraArray(arr, k) {\n  // Use a temporary array to rotate arr left by k positions\n  // Return the new rotated array\n  \n}",
+    "functionName": "leftRotateExtraArray",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          4
+        ],
+        "expected": [
+          5,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            10,
+            20,
+            30,
+            40,
+            50
+          ],
+          2
+        ],
+        "expected": [
+          30,
+          40,
+          50,
+          10,
+          20
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [],
+          2
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            9,
+            8,
+            7,
+            6,
+            5
+          ],
+          0
+        ],
+        "expected": [
+          9,
+          8,
+          7,
+          6,
+          5
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          6
+        ],
+        "expected": [
+          3,
+          4,
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-010",
+    "number": 31,
+    "title": "Right Rotate Array by K",
+    "slug": "right-rotate-array-k",
+    "description": "## Right Rotate Array by K Positions\n\nGiven an array `arr` and an integer `k`, rotate the array to the right by `k` positions.\n\nElement at index `i` moves to `(i + k) % n`.\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 2\nOutput: [4, 5, 1, 2, 3]\n```\n\n**Example 2:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 4\nOutput: [2, 3, 4, 5, 1]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `0 <= k <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function rightRotateK(arr, k) {\n  // Rotate array right by k positions\n  // Return the rotated array\n  \n}",
+    "functionName": "rightRotateK",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          4,
+          5,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          4
+        ],
+        "expected": [
+          2,
+          3,
+          4,
+          5,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            10,
+            20,
+            30
+          ],
+          0
+        ],
+        "expected": [
+          10,
+          20,
+          30
+        ]
+      },
+      {
+        "input": [
+          [],
+          5
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          3
+        ],
+        "expected": [
+          5,
+          6,
+          7,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            -1,
+            -100,
+            3,
+            99
+          ],
+          2
+        ],
+        "expected": [
+          3,
+          99,
+          -1,
+          -100
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-011",
+    "number": 32,
+    "title": "Left Rotate Array (Reversal Algorithm)",
+    "slug": "left-rotate-reversal-algorithm",
+    "description": "## Left Rotate Array by K Positions (Reversal Algorithm)\n\nGiven an array `arr` and an integer `k`, rotate the array to the left by `k` positions **in-place** with O(1) extra space using the 3-step reversal algorithm:\n\n1. Reverse the first `k` elements `(0 to k-1)`\n2. Reverse the remaining elements `(k to n-1)`\n3. Reverse the entire array `(0 to n-1)`\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 2\nOutput: [3, 4, 5, 1, 2]\nExplanation:\nReverse 0..1: [2, 1, 3, 4, 5]\nReverse 2..4: [2, 1, 5, 4, 3]\nReverse 0..4: [3, 4, 5, 1, 2]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `0 <= k <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "starterCode": "function leftRotateReversal(arr, k) {\n  // Use the 3-step reversal algorithm to left rotate in-place\n  // Return the rotated array\n  \n}",
+    "functionName": "leftRotateReversal",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          3,
+          4,
+          5,
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          4
+        ],
+        "expected": [
+          5,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            10,
+            20
+          ],
+          1
+        ],
+        "expected": [
+          20,
+          10
+        ]
+      },
+      {
+        "input": [
+          [],
+          3
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          3
+        ],
+        "expected": [
+          4,
+          5,
+          6,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            10,
+            15
+          ],
+          5
+        ],
+        "expected": [
+          15,
+          5,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-012",
+    "number": 33,
+    "title": "Right Rotate Array (Reversal Algorithm)",
+    "slug": "right-rotate-reversal-algorithm",
+    "description": "## Right Rotate Array by K Positions (Reversal Algorithm)\n\nGiven an array `arr` and an integer `k`, rotate the array to the right by `k` positions **in-place** with O(1) extra space using the 3-step reversal algorithm:\n\n1. Reverse the entire array `(0 to n-1)`\n2. Reverse the first `k` elements `(0 to k-1)`\n3. Reverse the remaining elements `(k to n-1)`\n\n### Examples\n\n**Example 1:**\n```\nInput: arr = [1, 2, 3, 4, 5], k = 2\nOutput: [4, 5, 1, 2, 3]\nExplanation:\nReverse 0..4: [5, 4, 3, 2, 1]\nReverse 0..1: [4, 5, 3, 2, 1]\nReverse 2..4: [4, 5, 1, 2, 3]\n```\n\n### Constraints\n- `0 <= arr.length <= 10^5`\n- `0 <= k <= 10^6`",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "starterCode": "function rightRotateReversal(arr, k) {\n  // Use the 3-step reversal algorithm to right rotate in-place\n  // Return the rotated array\n  \n}",
+    "functionName": "rightRotateReversal",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          2
+        ],
+        "expected": [
+          4,
+          5,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          3
+        ],
+        "expected": [
+          3,
+          4,
+          5,
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            -1,
+            -100,
+            3,
+            99
+          ],
+          2
+        ],
+        "expected": [
+          3,
+          99,
+          -1,
+          -100
+        ]
+      },
+      {
+        "input": [
+          [],
+          2
+        ],
+        "expected": []
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            1,
+            2
+          ],
+          3
+        ],
+        "expected": [
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            7,
+            8,
+            9,
+            10
+          ],
+          0
+        ],
+        "expected": [
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-013",
+    "number": 34,
+    "title": "Remove Duplicates from Sorted Array",
+    "slug": "remove-duplicates-sorted-array",
+    "description": "## Remove Duplicates from Sorted Array\n\nGiven an integer array `nums` sorted in non-decreasing order, remove the duplicates **in-place** such that each unique element appears only once. The relative order of the elements should be kept the same.\n\nReturn the number of unique elements `k`.\n\n### Examples\n\n**Example 1:**\n```\nInput: nums = [1, 1, 2]\nOutput: 2\nExplanation: nums becomes [1, 2, ...] with 2 unique elements.\n```\n\n**Example 2:**\n```\nInput: nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]\nOutput: 5\nExplanation: nums becomes [0, 1, 2, 3, 4, ...] with 5 unique elements.\n```\n\n### Constraints\n- `0 <= nums.length <= 10^5`\n- `-10^4 <= nums[i] <= 10^4`\n- `nums` is sorted in non-decreasing order",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function removeDuplicates(nums) {\n  // Remove duplicates in-place from sorted array nums\n  // Return the count of unique elements (k)\n  \n}",
+    "functionName": "removeDuplicates",
+    "testCases": [
+      {
+        "input": [
+          [
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "expected": 4
+      },
+      {
+        "input": [
+          []
+        ],
+        "expected": 0
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            7
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            -3,
+            -3,
+            -2,
+            -1,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "expected": 4
+      }
+    ]
+  },
+  {
+    "id": "arrays-014",
+    "number": 35,
+    "title": "Merge Two Sorted Arrays",
+    "slug": "merge-two-sorted-arrays",
+    "description": "## Merge Two Sorted Arrays\n\nGiven two sorted integer arrays `arr1` and `arr2`, merge them into a single sorted array using the **Two Pointers** technique and return it.\n\nDo **not** simply concatenate and use `.sort()`. Use two pointers `i` and `j` to achieve linear time complexity O(n + m).\n\n### Examples\n\n**Example 1:**\n```\nInput: arr1 = [2, 5, 6], arr2 = [1, 3, 4, 8]\nOutput: [1, 2, 3, 4, 5, 6, 8]\n```\n\n**Example 2:**\n```\nInput: arr1 = [1, 2, 3], arr2 = [2, 5, 6]\nOutput: [1, 2, 2, 3, 5, 6]\n```\n\n### Constraints\n- `0 <= arr1.length, arr2.length <= 10^5`\n- `-10^6 <= arr1[i], arr2[j] <= 10^6`\n- Both `arr1` and `arr2` are sorted in non-decreasing order",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function mergeSortedArrays(arr1, arr2) {\n  // Merge arr1 and arr2 into a single sorted array using two pointers\n  // Return the merged sorted array\n  \n}",
+    "functionName": "mergeSortedArrays",
+    "testCases": [
+      {
+        "input": [
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            1,
+            3,
+            4,
+            8
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            5,
+            6
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          2,
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "input": [
+          [],
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            10
+          ],
+          []
+        ],
+        "expected": [
+          5,
+          10
+        ]
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [],
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            -5,
+            -2,
+            0
+          ],
+          [
+            -3,
+            1,
+            4
+          ]
+        ],
+        "expected": [
+          -5,
+          -3,
+          -2,
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            3,
+            5,
+            7
+          ],
+          [
+            2,
+            4,
+            6,
+            8
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-015",
+    "number": 36,
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "description": "## Best Time to Buy and Sell Stock\n\nYou are given an array `prices` where `prices[i]` is the price of a given stock on the `i`th day.\n\nYou want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.\n\nReturn the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return `0`.\n\n### Examples\n\n**Example 1:**\n```\nInput: prices = [7, 1, 5, 3, 6, 4]\nOutput: 5\nExplanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6 - 1 = 5.\nNote that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.\n```\n\n**Example 2:**\n```\nInput: prices = [7, 6, 4, 3, 1]\nOutput: 0\nExplanation: In this case, no transactions are done and the max profit = 0.\n```\n\n**Example 3:**\n```\nInput: prices = [2, 4, 1]\nOutput: 2\nExplanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4 - 2 = 2.\n```\n\n### Constraints\n- `1 <= prices.length <= 10^5`\n- `0 <= prices[i] <= 10^4`",
+    "topic": "Arrays",
+    "difficulty": "Easy",
+    "starterCode": "function maxProfit(prices) {\n  // Find the maximum profit from buying on one day and selling in the future\n  // Return 0 if no profit can be made\n  \n}",
+    "functionName": "maxProfit",
+    "testCases": [
+      {
+        "input": [
+          [
+            7,
+            1,
+            5,
+            3,
+            6,
+            4
+          ]
+        ],
+        "expected": 5
+      },
+      {
+        "input": [
+          [
+            7,
+            6,
+            4,
+            3,
+            1
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            2,
+            4,
+            1
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            1,
+            2
+          ]
+        ],
+        "expected": 1
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            3,
+            3,
+            3,
+            3
+          ]
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "expected": 4
+      }
+    ]
+  },
+  {
+    "id": "arrays-016",
+    "number": 37,
+    "title": "Sort Colors (0s, 1s, and 2s)",
+    "slug": "sort-colors",
+    "description": "## Sort Colors (Dutch National Flag Algorithm)\n\nGiven an array `nums` with `n` objects colored red, white, or blue, sort them **in-place** so that objects of the same color are adjacent, with the colors in the order red, white, and blue.\n\nWe use the integers `0`, `1`, and `2` to represent the color red, white, and blue, respectively.\n\nYou must solve this problem without using the library's sort function and using the **Dutch National Flag algorithm** (three pointers `i`, `j`, `k`) in `O(n)` time complexity and constant extra space.\n\nReturn the sorted array `nums`.\n\n### Examples\n\n**Example 1:**\n```\nInput: nums = [1, 1, 0, 1, 2, 0, 1, 0, 2, 1, 1]\nOutput: [0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2]\n```\n\n**Example 2:**\n```\nInput: nums = [2, 0, 2, 1, 1, 0]\nOutput: [0, 0, 1, 1, 2, 2]\n```\n\n**Example 3:**\n```\nInput: nums = [2, 0, 1]\nOutput: [0, 1, 2]\n```\n\n### Constraints\n- `1 <= nums.length <= 10^5`\n- `nums[i]` is either `0`, `1`, or `2`",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "starterCode": "function sortColors(nums) {\n  // Sort nums in-place using Dutch National Flag (3 pointers)\n  // 0s first, then 1s, then 2s\n  // Return the sorted array nums\n  \n}",
+    "functionName": "sortColors",
+    "testCases": [
+      {
+        "input": [
+          [
+            1,
+            1,
+            0,
+            1,
+            2,
+            0,
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            0,
+            2,
+            1,
+            1,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            0
+          ]
+        ],
+        "expected": [
+          0
+        ]
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            2,
+            2,
+            1,
+            0,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          0,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        "expected": [
+          0,
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrays-017",
+    "number": 38,
+    "title": "Maximum Subarray Sum (Kadane's Algorithm)",
+    "slug": "maximum-subarray-sum",
+    "description": "## Maximum Subarray Sum (Kadane's Algorithm)\n\nGiven an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum, and return its sum.\n\nA **subarray** is a contiguous non-empty sequence of elements within an array.\n\nYou should implement **Kadane's Algorithm**, which runs in linear `O(n)` time.\n\n### Examples\n\n**Example 1:**\n```\nInput: nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]\nOutput: 6\nExplanation: The subarray [4, -1, 2, 1] has the largest sum = 6.\n```\n\n**Example 2:**\n```\nInput: nums = [1]\nOutput: 1\nExplanation: The subarray [1] has the largest sum = 1.\n```\n\n**Example 3:**\n```\nInput: nums = [5, 4, -1, 7, 8]\nOutput: 23\nExplanation: The subarray [5, 4, -1, 7, 8] has the largest sum = 23.\n```\n\n### Constraints\n- `1 <= nums.length <= 10^5`\n- `-10^4 <= nums[i] <= 10^4`",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "starterCode": "function maxSubArray(nums) {\n  // Find the contiguous subarray with the largest sum using Kadane's Algorithm\n  // Return the maximum sum\n  \n}",
+    "functionName": "maxSubArray",
+    "testCases": [
+      {
+        "input": [
+          [
+            -2,
+            1,
+            -3,
+            4,
+            -1,
+            2,
+            1,
+            -5,
+            4
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": 1
+      },
+      {
+        "input": [
+          [
+            5,
+            4,
+            -1,
+            7,
+            8
+          ]
+        ],
+        "expected": 23
+      },
+      {
+        "input": [
+          [
+            -1,
+            -2,
+            -3
+          ]
+        ],
+        "expected": -1
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          [
+            -5
+          ]
+        ],
+        "expected": -5
+      },
+      {
+        "input": [
+          [
+            2,
+            -1,
+            2,
+            3,
+            4,
+            -5
+          ]
+        ],
+        "expected": 10
+      },
+      {
+        "input": [
+          [
+            -2,
+            -1
+          ]
+        ],
+        "expected": -1
+      }
+    ]
+  },
+  {
+    "id": "arrays-018",
+    "number": 39,
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water",
+    "description": "## Trapping Rain Water\n\nGiven `n` non-negative integers representing an elevation map where the width of each bar is `1`, compute how much water it can trap after raining.\n\n### Examples\n\n**Example 1:**\n```\nInput: height = [4, 2, 0, 3, 2, 5]\nOutput: 9\nExplanation: The elevation map is [4, 2, 0, 3, 2, 5]. In this case, 9 units of rain water are trapped.\n```\n\n**Example 2:**\n```\nInput: height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]\nOutput: 6\nExplanation: 6 units of rain water are trapped.\n```\n\n**Example 3:**\n```\nInput: height = [3, 0, 2, 0, 4]\nOutput: 7\n```\n\n### Constraints\n- `0 <= height.length <= 2 * 10^4`\n- `0 <= height[i] <= 10^5`",
+    "topic": "Arrays",
+    "difficulty": "Hard",
+    "starterCode": "function trap(height) {\n  // Calculate total units of trapped rain water\n  // Using prefix max (left) and suffix max (right) arrays\n  // Return total trapped water\n  \n}",
+    "functionName": "trap",
+    "testCases": [
+      {
+        "input": [
+          [
+            4,
+            2,
+            0,
+            3,
+            2,
+            5
+          ]
+        ],
+        "expected": 9
+      },
+      {
+        "input": [
+          [
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            3,
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        "expected": 6
+      },
+      {
+        "input": [
+          [
+            3,
+            0,
+            2,
+            0,
+            4
+          ]
+        ],
+        "expected": 7
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": 0
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          []
+        ],
+        "expected": 0
+      },
+      {
+        "input": [
+          [
+            2,
+            0,
+            2
+          ]
+        ],
+        "expected": 2
+      },
+      {
+        "input": [
+          [
+            5,
+            4,
+            1,
+            2
+          ]
+        ],
+        "expected": 1
+      }
+    ]
+  },
+  {
+    "id": "strings-001",
+    "number": 40,
+    "title": "Reverse a String",
+    "slug": "reverse-string",
+    "description": "## Reverse a String\n\nGiven a string `s`, return the string reversed.\n\nYou should iterate through the characters and construct the reversed string without relying solely on built-in array reverse methods.\n\n### Examples\n\n**Example 1:**\n```\nInput: s = \"hello\"\nOutput: \"olleh\"\n```\n\n**Example 2:**\n```\nInput: s = \"world\"\nOutput: \"dlrow\"\n```\n\n**Example 3:**\n```\nInput: s = \"JavaScript\"\nOutput: \"tpircSavaJ\"\n```\n\n### Constraints\n- `0 <= s.length <= 10^5`\n- `s` consists of printable ASCII characters",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "starterCode": "function reverseString(s) {\n  // Reverse the string s and return it\n  \n}",
+    "functionName": "reverseString",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": "olleh"
+      },
+      {
+        "input": [
+          "world"
+        ],
+        "expected": "dlrow"
+      },
+      {
+        "input": [
+          "JavaScript"
+        ],
+        "expected": "tpircSavaJ"
+      },
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          "a"
+        ],
+        "expected": "a"
+      },
+      {
+        "input": [
+          "12345"
+        ],
+        "expected": "54321"
+      },
+      {
+        "input": [
+          "racecar"
+        ],
+        "expected": "racecar"
+      }
+    ]
+  },
+  {
+    "id": "strings-002",
+    "number": 41,
+    "title": "Check Palindrome String",
+    "slug": "check-palindrome-string",
+    "description": "## Check Palindrome String\n\nGiven a string `s`, determine if it is a palindrome.\n\nA string is a **palindrome** if it reads the exact same forward and backward.\n\nUse the two-pointer approach (`i` starting from index 0 and `j` starting from the end) to compare characters moving towards the center. Return `true` if it is a palindrome, otherwise return `false`.\n\n### Examples\n\n**Example 1:**\n```\nInput: s = \"racecar\"\nOutput: true\n```\n\n**Example 2:**\n```\nInput: s = \"hello\"\nOutput: false\n```\n\n**Example 3:**\n```\nInput: s = \"madam\"\nOutput: true\n```\n\n### Constraints\n- `0 <= s.length <= 10^5`\n- `s` consists of printable ASCII characters",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "starterCode": "function isPalindrome(s) {\n  // Check if string s is a palindrome using two pointers\n  // Return true if palindrome, false otherwise\n  \n}",
+    "functionName": "isPalindrome",
+    "testCases": [
+      {
+        "input": [
+          "racecar"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "madam"
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": true
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          ""
+        ],
+        "expected": true
+      },
+      {
+        "input": [
+          "ab"
+        ],
+        "expected": false
+      },
+      {
+        "input": [
+          "1221"
+        ],
+        "expected": true
+      }
+    ]
+  },
+  {
+    "id": "strings-003",
+    "number": 42,
+    "title": "Toggle Character Case",
+    "slug": "toggle-character-case",
+    "description": "## Toggle Character Case\n\nGiven a string `s`, toggle the case of every character:\n- Convert all uppercase letters (`'A'` - `'Z'`) to lowercase (`'a'` - `'z'`).\n- Convert all lowercase letters (`'a'` - `'z'`) to uppercase (`'A'` - `'Z'`).\n- Characters that are not English letters (digits, spaces, punctuation) must remain unchanged.\n\nReturn the resulting string.\n\n### Examples\n\n**Example 1:**\n```\nInput: s = \"Hello World!\"\nOutput: \"hELLO wORLD!\"\n```\n\n**Example 2:**\n```\nInput: s = \"DSA Practice\"\nOutput: \"dsa pRACTICE\"\n```\n\n**Example 3:**\n```\nInput: s = \"abcXYZ\"\nOutput: \"ABCxyz\"\n```\n\n### Constraints\n- `0 <= s.length <= 10^5`\n- `s` consists of printable ASCII characters",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "starterCode": "function toggleCase(s) {\n  // Toggle the case of all characters in s\n  // Uppercase becomes lowercase, lowercase becomes uppercase\n  // Return the toggled string\n  \n}",
+    "functionName": "toggleCase",
+    "testCases": [
+      {
+        "input": [
+          "Hello World!"
+        ],
+        "expected": "hELLO wORLD!"
+      },
+      {
+        "input": [
+          "DSA Practice"
+        ],
+        "expected": "dsa pRACTICE"
+      },
+      {
+        "input": [
+          "abcXYZ"
+        ],
+        "expected": "ABCxyz"
+      },
+      {
+        "input": [
+          "1234#$*"
+        ],
+        "expected": "1234#$*"
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          ""
+        ],
+        "expected": ""
+      },
+      {
+        "input": [
+          "a"
+        ],
+        "expected": "A"
+      },
+      {
+        "input": [
+          "Code123"
+        ],
+        "expected": "cODE123"
+      }
+    ]
+  },
+  {
+    "id": "strings-004",
+    "number": 43,
+    "title": "Character Frequency Count",
+    "slug": "character-frequency-count",
+    "description": "## Character Frequency Count\n\nGiven a string `s`, count how many times each character appears in `s`.\n\nReturn an object where each key is a character from `s` and its value is the frequency count.\n\n### Examples\n\n**Example 1:**\n```\nInput: s = \"hello\"\nOutput: { \"h\": 1, \"e\": 1, \"l\": 2, \"o\": 1 }\n```\n\n**Example 2:**\n```\nInput: s = \"banana\"\nOutput: { \"b\": 1, \"a\": 3, \"n\": 2 }\n```\n\n**Example 3:**\n```\nInput: s = \"aabbcc\"\nOutput: { \"a\": 2, \"b\": 2, \"c\": 2 }\n```\n\n### Constraints\n- `0 <= s.length <= 10^5`\n- `s` consists of printable ASCII characters",
+    "topic": "Strings",
+    "difficulty": "Easy",
+    "starterCode": "function charFrequency(s) {\n  // Count the frequency of each character in string s\n  // Return an object: { character: count }\n  \n}",
+    "functionName": "charFrequency",
+    "testCases": [
+      {
+        "input": [
+          "hello"
+        ],
+        "expected": {
+          "h": 1,
+          "e": 1,
+          "l": 2,
+          "o": 1
+        }
+      },
+      {
+        "input": [
+          "banana"
+        ],
+        "expected": {
+          "b": 1,
+          "a": 3,
+          "n": 2
+        }
+      },
+      {
+        "input": [
+          "aabbcc"
+        ],
+        "expected": {
+          "a": 2,
+          "b": 2,
+          "c": 2
+        }
+      },
+      {
+        "input": [
+          "z"
+        ],
+        "expected": {
+          "z": 1
+        }
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          ""
+        ],
+        "expected": {}
+      },
+      {
+        "input": [
+          "mississippi"
+        ],
+        "expected": {
+          "m": 1,
+          "i": 4,
+          "s": 4,
+          "p": 2
+        }
+      },
+      {
+        "input": [
+          "11223"
+        ],
+        "expected": {
+          "1": 2,
+          "2": 2,
+          "3": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "sorting-001",
+    "number": 44,
+    "title": "Bubble Sort (Ascending)",
+    "slug": "bubble-sort-ascending",
+    "description": "## Bubble Sort (Ascending Order)\n\nImplement the **Bubble Sort** algorithm.\n\nGiven an array of integers `nums`, sort the array in **ascending** order (from smallest to largest) by repeatedly comparing adjacent elements and swapping them if `nums[j] > nums[j+1]`.\n\nReturn the sorted array.\n\n### Examples\n\n**Example 1:**\n```\nInput: nums = [10, 5, 1, 12, 3]\nOutput: [1, 3, 5, 10, 12]\n```\n\n**Example 2:**\n```\nInput: nums = [5, 1, 4, 2, 8]\nOutput: [1, 2, 4, 5, 8]\n```\n\n**Example 3:**\n```\nInput: nums = [3, 2, 1]\nOutput: [1, 2, 3]\n```\n\n### Constraints\n- `0 <= nums.length <= 1000`\n- `-10^4 <= nums[i] <= 10^4`",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "starterCode": "function bubbleSort(nums) {\n  // Sort nums in ascending order using Bubble Sort\n  // Return the sorted array nums\n  \n}",
+    "functionName": "bubbleSort",
+    "testCases": [
+      {
+        "input": [
+          [
+            10,
+            5,
+            1,
+            12,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          3,
+          5,
+          10,
+          12
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            1,
+            4,
+            2,
+            8
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          4,
+          5,
+          8
+        ]
+      },
+      {
+        "input": [
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            42
+          ]
+        ],
+        "expected": [
+          42
+        ]
+      },
+      {
+        "input": [
+          [
+            -3,
+            10,
+            -5,
+            0,
+            7
+          ]
+        ],
+        "expected": [
+          -5,
+          -3,
+          0,
+          7,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sorting-002",
+    "number": 45,
+    "title": "Bubble Sort (Descending)",
+    "slug": "bubble-sort-descending",
+    "description": "## Bubble Sort (Descending Order)\n\nGiven an array of integers `nums`, sort the array in **descending** order (from largest to smallest) using the **Bubble Sort** algorithm.\n\nRepeatedly compare adjacent elements and swap them if the preceding element is smaller than the following element (`nums[j] > nums[j-1]` when scanning backwards or `nums[j] < nums[j+1]`).\n\nReturn the sorted array in descending order.\n\n### Examples\n\n**Example 1:**\n```\nInput: nums = [2, 4, 1, 9, 5, 7]\nOutput: [9, 7, 5, 4, 2, 1]\n```\n\n**Example 2:**\n```\nInput: nums = [10, 5, 1, 12, 3]\nOutput: [12, 10, 5, 3, 1]\n```\n\n**Example 3:**\n```\nInput: nums = [1, 2, 3]\nOutput: [3, 2, 1]\n```\n\n### Constraints\n- `0 <= nums.length <= 1000`\n- `-10^4 <= nums[i] <= 10^4`",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "starterCode": "function bubbleSortDescending(nums) {\n  // Sort nums in descending order using Bubble Sort\n  // Return the sorted array nums\n  \n}",
+    "functionName": "bubbleSortDescending",
+    "testCases": [
+      {
+        "input": [
+          [
+            2,
+            4,
+            1,
+            9,
+            5,
+            7
+          ]
+        ],
+        "expected": [
+          9,
+          7,
+          5,
+          4,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            10,
+            5,
+            1,
+            12,
+            3
+          ]
+        ],
+        "expected": [
+          12,
+          10,
+          5,
+          3,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "expected": [
+          3,
+          2,
+          1
+        ]
+      },
+      {
+        "input": [
+          [
+            5
+          ]
+        ],
+        "expected": [
+          5
+        ]
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            -4,
+            0,
+            5,
+            -2,
+            8
+          ]
+        ],
+        "expected": [
+          8,
+          5,
+          0,
+          -2,
+          -4
+        ]
+      },
+      {
+        "input": [
+          [
+            7,
+            7,
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          7,
+          7,
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sorting-003",
+    "number": 46,
+    "title": "Selection Sort",
+    "slug": "selection-sort",
+    "description": "## Selection Sort\n\nImplement the **Selection Sort** algorithm.\n\nGiven an array of integers `nums`, sort the array in **ascending** order using Selection Sort:\n1. In each pass `i` (from 0 to `n-2`), find the index `minindex` of the minimum element in the remaining unsorted subarray `[i ... n-1]`.\n2. Swap the element at `minindex` with the element at index `i`.\n3. Repeat until the array is fully sorted.\n\nReturn the sorted array.\n\n### Examples\n\n**Example 1:**\n```\nInput: nums = [10, 5, 12, 1, 3]\nOutput: [1, 3, 5, 10, 12]\n```\n\n**Example 2:**\n```\nInput: nums = [64, 25, 12, 22, 11]\nOutput: [11, 12, 22, 25, 64]\n```\n\n**Example 3:**\n```\nInput: nums = [4, 3, 2, 1]\nOutput: [1, 2, 3, 4]\n```\n\n### Constraints\n- `0 <= nums.length <= 1000`\n- `-10^4 <= nums[i] <= 10^4`",
+    "topic": "Sorting",
+    "difficulty": "Easy",
+    "starterCode": "function selectionSort(nums) {\n  // Sort nums in ascending order using Selection Sort\n  // In each iteration, find the minimum index and swap with current index i\n  // Return the sorted array nums\n  \n}",
+    "functionName": "selectionSort",
+    "testCases": [
+      {
+        "input": [
+          [
+            10,
+            5,
+            12,
+            1,
+            3
+          ]
+        ],
+        "expected": [
+          1,
+          3,
+          5,
+          10,
+          12
+        ]
+      },
+      {
+        "input": [
+          [
+            64,
+            25,
+            12,
+            22,
+            11
+          ]
+        ],
+        "expected": [
+          11,
+          12,
+          22,
+          25,
+          64
+        ]
+      },
+      {
+        "input": [
+          [
+            4,
+            3,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            1
+          ]
+        ],
+        "expected": [
+          1
+        ]
+      }
+    ],
+    "hiddenTestCases": [
+      {
+        "input": [
+          []
+        ],
+        "expected": []
+      },
+      {
+        "input": [
+          [
+            -2,
+            -5,
+            0,
+            4,
+            1
+          ]
+        ],
+        "expected": [
+          -5,
+          -2,
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "input": [
+          [
+            5,
+            2,
+            5,
+            2,
+            1
+          ]
+        ],
+        "expected": [
+          1,
+          2,
+          2,
+          5,
+          5
+        ]
+      }
     ]
   }
 ]

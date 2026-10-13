@@ -5,7 +5,7 @@ export interface Problem {
   title: string;
   slug: string;
   description: string;
-  topic: 'Basic' | 'Loops' | 'Patterns' | 'Arrays';
+  topic: 'Basic' | 'Loops' | 'Patterns' | 'Arrays' | 'Strings' | 'Sorting';
   difficulty: 'Easy' | 'Medium' | 'Hard';
   starterCode: string;
   functionName: string;

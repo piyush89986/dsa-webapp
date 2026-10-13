@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import { requireAuth, checkRateLimit, incrementRateLimit, getCachedHint, cacheHint } from '@/lib/ai-utils';
 
 export async function POST(req: NextRequest) {
@@ -30,33 +30,34 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    if (!process.env.ANTHROPIC_API_KEY) {
+    const apiKey = process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) {
       return NextResponse.json(
-        { error: 'AI service is not configured. Please set ANTHROPIC_API_KEY.' },
+        { error: 'AI service is not configured. Please set OPENAI_API_KEY.' },
         { status: 503 }
       );
     }
 
-    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    let hint = '';
 
-    const message = await anthropic.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 500,
-      messages: [
-        {
-          role: 'user',
-          content: `You are a DSA tutor. Give a SHORT hint for this problem. DO NOT give the full solution or any code. Just give a conceptual nudge to help the student figure it out themselves.
-
-Problem: ${problemTitle}
-Description: ${problemDescription}
-${userCode ? `Student's current code:\n${userCode}` : ''}
-
-Give a brief, encouraging hint (2-3 sentences max).`,
-        },
-      ],
-    });
-
-    const hint = message.content[0].type === 'text' ? message.content[0].text : '';
+    if (process.env.OPENAI_API_KEY) {
+      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        max_tokens: 500,
+        messages: [
+          {
+            role: 'system',
+            content: 'You are a DSA tutor. Give a SHORT hint for this problem. DO NOT give the full solution or any code. Just give a conceptual nudge to help the student figure it out themselves. Give a brief, encouraging hint (2-3 sentences max).',
+          },
+          {
+            role: 'user',
+            content: `Problem: ${problemTitle}\nDescription: ${problemDescription}\n${userCode ? `Student's current code:\n${userCode}` : ''}`,
+          },
+        ],
+      });
+      hint = response.choices[0]?.message?.content || '';
+    }
 
     // Cache the hint
     await cacheHint(problemTitle, hint);

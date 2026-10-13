@@ -25,13 +25,17 @@ const topicColors: Record<string, string> = {
   Loops: 'var(--accent-blue)',
   Patterns: 'var(--accent-purple)',
   Arrays: 'var(--accent-green)',
+  Strings: 'var(--accent-orange)',
+  Sorting: 'var(--accent-pink)',
 };
 
 const topicTotals: Record<string, number> = {
   Basic: 6,
   Loops: 7,
   Patterns: 8,
-  Arrays: 4,
+  Arrays: 18,
+  Strings: 4,
+  Sorting: 3,
 };
 
 export default function ProfilePage() {

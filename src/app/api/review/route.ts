@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import { requireAuth, checkRateLimit, incrementRateLimit } from '@/lib/ai-utils';
 
 export async function POST(req: NextRequest) {
@@ -23,40 +23,40 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    if (!process.env.ANTHROPIC_API_KEY) {
+    const apiKey = process.env.OPENAI_API_KEY || process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) {
       return NextResponse.json(
-        { error: 'AI service is not configured. Please set ANTHROPIC_API_KEY.' },
+        { error: 'AI service is not configured. Please set OPENAI_API_KEY.' },
         { status: 503 }
       );
     }
 
-    const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+    let review = '';
 
-    const message = await anthropic.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 800,
-      messages: [
-        {
-          role: 'user',
-          content: `You are a code reviewer for DSA problems. Review the student's code and:
+    if (process.env.OPENAI_API_KEY) {
+      const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
+        max_tokens: 800,
+        messages: [
+          {
+            role: 'system',
+            content: `You are a code reviewer for DSA problems. Review the student's code and:
 1. Point out any bugs or logical errors
 2. State the time complexity (Big O)
 3. State the space complexity (Big O)
 4. Suggest improvements (but don't rewrite the entire solution)
 
-Problem: ${problemTitle}
-Description: ${problemDescription}
-Student's Code:
-\`\`\`javascript
-${userCode}
-\`\`\`
-
-Be concise and helpful. Format your response with clear sections.`,
-        },
-      ],
-    });
-
-    const review = message.content[0].type === 'text' ? message.content[0].text : '';
+Be concise and helpful. Format your response with clear markdown headings and sections.`,
+          },
+          {
+            role: 'user',
+            content: `Problem: ${problemTitle}\nDescription: ${problemDescription}\nStudent's Code:\n\`\`\`javascript\n${userCode}\n\`\`\``,
+          },
+        ],
+      });
+      review = response.choices[0]?.message?.content || '';
+    }
 
     await incrementRateLimit(session.user!.id!);
 

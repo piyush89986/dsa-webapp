@@ -1,4 +1,4 @@
-import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -17,9 +17,9 @@ interface ProblemSchema {
 }
 
 async function importProblems() {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
-    console.error('❌ ANTHROPIC_API_KEY not set. Add it to .env.local');
+    console.error('❌ OPENAI_API_KEY not set. Add it to .env.local');
     process.exit(1);
   }
 
@@ -41,7 +41,7 @@ async function importProblems() {
 
   console.log(`📄 Found ${files.length} raw problem files`);
 
-  const anthropic = new Anthropic({ apiKey });
+  const openai = new OpenAI({ apiKey });
   const results: ProblemSchema[] = [];
 
   for (const file of files) {
@@ -50,13 +50,13 @@ async function importProblems() {
     console.log(`\n🔄 Processing: ${file}`);
 
     try {
-      const message = await anthropic.messages.create({
-        model: 'claude-haiku-4-5-20251001',
+      const response = await openai.chat.completions.create({
+        model: 'gpt-4o-mini',
         max_tokens: 2000,
         messages: [
           {
-            role: 'user',
-            content: `Convert this raw problem description into a structured JSON object for a coding practice platform.
+            role: 'system',
+            content: `Convert the raw problem description into a structured JSON object for a coding practice platform.
 
 The JSON must have these exact fields:
 - id: a kebab-case unique identifier (e.g., "basic-001")
@@ -64,26 +64,28 @@ The JSON must have these exact fields:
 - title: string
 - slug: kebab-case URL slug
 - description: markdown formatted problem description with examples and constraints
-- topic: one of "Basic", "Loops", "Patterns", "Arrays"
+- topic: one of "Basic", "Loops", "Patterns", "Arrays", "Strings", "Sorting"
 - difficulty: one of "Easy", "Medium", "Hard"
 - starterCode: JavaScript function stub with helpful comments
 - functionName: the name of the function
 - testCases: array of {input: [...args], expected: value} (4-5 visible test cases)
 - hiddenTestCases: array of {input: [...args], expected: value} (2-3 hidden test cases)
 
-IMPORTANT: Convert any prompt()/console-input based problems into function-based ones (function takes arguments, returns a value). Pattern problems should return the pattern as a string.
-
-Raw problem:
----
-${content}
----
-
-Return ONLY the JSON object, no explanation or markdown fences.`,
+IMPORTANT: Convert any prompt()/console-input based problems into function-based ones (function takes arguments, returns a value). Pattern problems should return the pattern as a string. Return ONLY valid JSON, no markdown fences.`,
+          },
+          {
+            role: 'user',
+            content: `Raw problem:\n---\n${content}\n---`,
           },
         ],
       });
 
-      const text = message.content[0].type === 'text' ? message.content[0].text : '';
+      let text = response.choices[0]?.message?.content?.trim() || '';
+      if (text.startsWith('```json')) {
+        text = text.replace(/^```json/, '').replace(/```$/, '').trim();
+      } else if (text.startsWith('```')) {
+        text = text.replace(/^```/, '').replace(/```$/, '').trim();
+      }
       const problem = JSON.parse(text);
       results.push(problem);
       console.log(`   ✅ ${problem.title}`);
@@ -97,7 +99,7 @@ Return ONLY the JSON object, no explanation or markdown fences.`,
   fs.writeFileSync(reviewPath, JSON.stringify(results, null, 2));
   console.log(`\n✅ Wrote ${results.length} problems to data/review.json`);
   console.log('📝 Review the file manually, then copy approved problems to data/problems.json');
-  console.log('   Then run: npm run seed');
+  console.log('   Then run: npm run seed or npm run push-problems');
 }
 
 importProblems();
