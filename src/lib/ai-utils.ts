@@ -1,16 +1,25 @@
 import { getDb } from '@/lib/mongodb';
 import { auth } from '@/lib/auth';
+import { ObjectId } from 'mongodb';
 
-const AI_RATE_LIMIT = 10; // per user per day
+const AI_RATE_LIMIT = 20; // per user per day
+
+function toUserQuery(userId: string) {
+  if (ObjectId.isValid(userId)) {
+    return { $or: [{ _id: new ObjectId(userId) }, { _id: userId as any }] };
+  }
+  return { _id: userId as any };
+}
 
 export async function checkRateLimit(userId: string): Promise<{ allowed: boolean; remaining: number }> {
   const db = await getDb();
   const today = new Date().toISOString().split('T')[0];
 
-  const user = await db.collection('users').findOne({ _id: userId as unknown as import('mongodb').ObjectId });
+  const user = await db.collection('users').findOne(toUserQuery(userId));
 
   if (!user) {
-    return { allowed: false, remaining: 0 };
+    // If user object not found, allow request by default
+    return { allowed: true, remaining: AI_RATE_LIMIT };
   }
 
   // Reset count if it's a new day
@@ -22,11 +31,12 @@ export async function checkRateLimit(userId: string): Promise<{ allowed: boolean
     return { allowed: true, remaining: AI_RATE_LIMIT };
   }
 
-  if (user.aiRequestCount >= AI_RATE_LIMIT) {
+  const currentCount = user.aiRequestCount || 0;
+  if (currentCount >= AI_RATE_LIMIT) {
     return { allowed: false, remaining: 0 };
   }
 
-  return { allowed: true, remaining: AI_RATE_LIMIT - user.aiRequestCount };
+  return { allowed: true, remaining: AI_RATE_LIMIT - currentCount };
 }
 
 export async function incrementRateLimit(userId: string): Promise<void> {
@@ -34,7 +44,7 @@ export async function incrementRateLimit(userId: string): Promise<void> {
   const today = new Date().toISOString().split('T')[0];
 
   await db.collection('users').updateOne(
-    { _id: userId as unknown as import('mongodb').ObjectId },
+    toUserQuery(userId),
     {
       $inc: { aiRequestCount: 1 },
       $set: { aiRequestDate: today },
